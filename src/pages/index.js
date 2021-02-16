@@ -5,7 +5,6 @@ import Titles from "../components/Titles/Titles";
 import homeStyles from "./pageStyles/home.module.scss";
 import { Link } from "gatsby";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import Flower from "../components/Flower";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 
 export default function Home() {
