@@ -1,0 +1,20 @@
+$nav-color: #dcd9c6;
+$hover-color: #556f7a;
+$active-color: #c97064;
+$black-color: #1b1924;
+
+.container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  overflow: hidden;
+  flex-grow: 1;
+}
