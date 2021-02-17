@@ -8,7 +8,11 @@ $bright-orange: #ffd166;
 $banana: #f7e3af;
 $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
-
+.svg {
+  margin: auto;
+  // border: 1px solid $black-color;
+  transform: rotate(-90deg);
+}
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
@@ -16,24 +20,16 @@ $oceanGreen: #61c9a8;
   animation-direction: alternate;
   animation-timing-function: ease;
   animation-fill-mode: both;
-  fill-opacity: 0;
   margin: 0%;
 }
 
 @keyframes dash {
   from {
     stroke-dashoffset: 800;
+    stroke: $active-color;
   }
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-@keyframes fill {
-  from {
-    fill-opacity: 0;
-  }
-  to {
-    fill-opacity: 1;
+    stroke: $hover-color;
   }
 }

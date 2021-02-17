@@ -1,26 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Layout from "../components/Layout/Layout";
-import flowerStyle from "./pageStyles/flowe.module.scss";
+import Layout from "../Layout/Layout";
+import flowerStyle from "./flower.module.scss";
 
-function indexTwo(props) {
+function Flower(props) {
   const path = document.querySelector("path");
   return (
-    <Layout>
-      <svg
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        x="0px"
-        y="-400px"
-        viewBox="0 0 720 720"
-        xmlSpace="preserve"
-      >
-        <path
-          className={flowerStyle.path}
-          stroke="#1b1924"
-          d="M545.44,511.82c0.99-2.42-2.66-4.96-1.1-5.51c1.54-0.55,16.78-23.07,16.78-23.07s9.6-13.47,17.1-19.1
+    <svg
+      className={flowerStyle.svg}
+      width="800"
+      height="450"
+      x="0px"
+      y="0px"
+      viewBox="30 210 700 300"
+    >
+      <path
+        className={flowerStyle.path}
+        stroke="#c97064"
+        strokeWidth="1.5px"
+        fillOpacity={0}
+        d="M545.44,511.82c0.99-2.42-2.66-4.96-1.1-5.51c1.54-0.55,16.78-23.07,16.78-23.07s9.6-13.47,17.1-19.1
 	c7.51-5.63,13.47-22.52,13.47-22.52s1.1-4.3-4.75-12.92c-5.84-8.61-5.63-14.57-5.63-14.57s4.15-0.33,10.47,7.95
 	c0,0,15.59,10.93,21.45,14.25c0,0,1.1,1,5.08,8.5c3.97,7.51,7.39,15.57,9.05,15.46c1.66-0.11,2.09,0,5.3-4.3
 	c3.2-4.3,10.26-4.42,11.37-5.3c1.1-0.88,1.33-2.54-1.99-3.54c-3.31-0.99-9.93-10.37-11.14-26.38c0,0-1.77-4.53,4.53-2.33
@@ -139,10 +138,9 @@ function indexTwo(props) {
 	s0.39-6.4,0.39-9.71c0-3.31,2.48-2.87,1.54-4.48c-0.94-1.6-4.47-0.72-4.08-6.35c0.38-5.63,2.09-9.87,5.74-9.83
 	c3.64,0.06,10.6-1.23,16.28-9.03c0,0,3.47-6.8,5.51-2.39c2.05,4.42,5.58,26.22,7.52,29.7c1.93,3.48,0.05,8.56-3.09,11.48
 	c-3.15,2.93-9.99,5.84-10.82,19.31c-0.82,13.47-2.81,21.64-5.74,33.57C543.07,493,541.31,504.81,538.6,500.01z"
-        />
-      </svg>
-    </Layout>
+      />
+    </svg>
   );
 }
 
-export default indexTwo;
+export default Flower;
