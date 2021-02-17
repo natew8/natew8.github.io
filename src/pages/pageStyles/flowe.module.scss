@@ -1,0 +1,39 @@
+$nav-color: #dcd9c6;
+$hover-color: #556f7a;
+$active-color: #c97064;
+$black-color: #1b1924;
+$black-colorLighter: #535355;
+//Folio Colors
+$bright-orange: #ffd166;
+$banana: #f7e3af;
+$bananaDim: #f7e3af2f;
+$oceanGreen: #61c9a8;
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 30s infinite forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  fill-opacity: 0;
+  margin: 0%;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}

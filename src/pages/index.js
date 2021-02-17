@@ -9,7 +9,7 @@ import SocialLinks from "../components/SocialLinks/SocialLinks";
 
 export default function Home() {
   const [done, setDone] = useState(false);
-  setTimeout(() => [setDone(true)], 3500);
+  setTimeout(() => [setDone(true)], 1000);
 
   return (
     <Layout>
@@ -19,14 +19,14 @@ export default function Home() {
             <motion.h1
               initial={{ opacity: 0, translateY: -100 }}
               animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 0.5 }}
             >
               Hey,
             </motion.h1>
             <motion.h1
               initial={{ opacity: 0, translateX: -100 }}
               animate={{ opacity: 1, translateX: 0 }}
-              transition={{ delay: 1.51, duration: 1.5 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
             >
               I'm
               <h1 className={homeStyles.myName}>Nate</h1>,
@@ -48,11 +48,7 @@ export default function Home() {
               </h3>
               <h3>Whatever brings you, welcome!</h3>
             </motion.div>
-            <motion.span
-              initial={{ opacity: 0, translateX: 100 }}
-              animate={{ opacity: 1, translateX: 0 }}
-              transition={{ delay: 8, duration: 0.5 }}
-            >
+            <span>
               <AniLink cover direction="left" bg="#c97064" to="/portfolio">
                 <button className={homeStyles.portfolio}>.portfolio</button>
               </AniLink>
@@ -67,7 +63,7 @@ export default function Home() {
               {/* <Link to="/contact">
                 <button className={homeStyles.contact}>.contact</button>
               </Link> */}
-            </motion.span>
+            </span>
             <SocialLinks />
           </div>
           <motion.div
