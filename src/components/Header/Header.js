@@ -28,7 +28,7 @@ function Header(props) {
               cover
               direction="down"
               bg="#1b1924"
-              style={{ textDecoration: "none", color: "#d84936" }}
+              style={{ textDecoration: "none", color: "#1c5c77" }}
               to="/"
             >
               NW

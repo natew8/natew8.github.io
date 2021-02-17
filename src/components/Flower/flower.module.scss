@@ -13,12 +13,12 @@ $oceanGreen: #61c9a8;
   margin: 0 auto;
   margin-left: 18.5rem;
   // border: 1px solid $black-color;
-  // transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
-  animation: dash 30s infinite forwards;
+  animation: dash 40s infinite forwards;
   animation-direction: alternate;
   animation-timing-function: ease;
   animation-fill-mode: both;

@@ -15,12 +15,15 @@ function Hero(props) {
       <span className={heroStyles.bottomBox}>
         <div className={heroStyles.sumContainer}>
           <h1>
-            Full Stack Web Developer<br></br> working to make the world a more
-            <br></br>
-            creative place through code and music.
+            Full Stack Web Developer / Music Producer<br></br>
+            <h3>Passi</h3>
           </h1>
         </div>
       </span>
+      <div className={heroStyles.tL}></div>
+      <div className={heroStyles.tR}></div>
+      <div className={heroStyles.bL}></div>
+      <div className={heroStyles.bR}></div>
     </div>
     // <motion.div
     //   initial={{ opacity: 0 }}

@@ -11,6 +11,7 @@ $black-color: #1b1924;
   position: relative;
   z-index: 40000;
   margin: 0%;
+  margin-bottom: 1rem;
 }
 .nav {
   width: 75%;
@@ -30,8 +31,13 @@ $black-color: #1b1924;
     text-transform: lowercase;
     font-family: sans-serif;
     margin: 0%;
+    width: 5rem;
+    display: flex;
+    align-items: center;
   }
   .link {
+    overflow: hidden;
+    margin: 0% auto;
     letter-spacing: 2px;
     font-weight: 500;
     overflow-x: hidden;
@@ -148,9 +154,9 @@ $black-color: #1b1924;
 .logo {
   font-family: sans-serif;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 500;
   margin: 0%;
   border: 5px solid $active-color;
-  color: $active-color;
+  color: $black-color;
   padding: 10px;
 }
