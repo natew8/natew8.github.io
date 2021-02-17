@@ -1,25 +1,34 @@
+$nav-color: #dcd9c6;
+$hover-color: #1c5c77;
+// $hover-color: #556f7a;
+$active-color: #d84936;
+$black-color: #1b1924;
+$white: #f3f2f1;
+
 .iconContainer {
-  position: absolute;
-  bottom: 0rem;
+  position: fixed;
+  right: 0%;
+  top: 17vh;
   display: flex;
+  flex-direction: column;
   height: fit-content;
   a {
     margin: 0%;
     position: static;
-    margin-right: 2rem;
+    margin-right: 1rem;
     height: fit-content;
   }
   .icon {
     filter: invert(7%) sepia(16%) saturate(1369%) hue-rotate(210deg)
       brightness(97%) contrast(91%);
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     border: none;
     box-shadow: none;
     width: 60px;
     transition: transform ease 0.3s;
   }
   .icon:hover {
-    transform: translateY(-10px);
+    transform: translateX(-10px);
   }
 }
 #github:hover {

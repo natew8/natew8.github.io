@@ -7,9 +7,9 @@ function SocialLinks(props) {
   return (
     <motion.span
       className={socialStyles.iconContainer}
-      initial={{ opacity: 0, translateY: 100 }}
-      animate={{ opacity: 1, translateY: 0 }}
-      transition={{ delay: 7, duration: 0.5 }}
+      initial={{ opacity: 0, translateX: 100 }}
+      animate={{ opacity: 1, translateX: 0 }}
+      transition={{ delay: 3, duration: 0.5 }}
     >
       <a target="_blank" rel="noreferrer" href="https://github.com/natew8">
         <img

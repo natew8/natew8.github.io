@@ -9,9 +9,11 @@ $banana: #f7e3af;
 $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 .svg {
-  margin-top: -1.5%;
+  position: absolute;
+  margin: 0 auto;
+  margin-left: 18.5rem;
   // border: 1px solid $black-color;
-  transform: rotate(-90deg);
+  // transform: rotate(-90deg);
 }
 .path {
   stroke-dasharray: 1000;

@@ -16,10 +16,11 @@ function Titles(props) {
     const interval = setInterval(() => {
       timesRun += 1;
       setCount((count) => count + 1);
-      if (timesRun === 5) {
-        clearInterval(interval);
+      if (timesRun === 6) {
+        setCount((count) => count - 6);
+        timesRun = 0;
       }
-    }, 800);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 

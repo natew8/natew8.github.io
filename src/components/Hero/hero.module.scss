@@ -1,0 +1,89 @@
+$nav-color: #dcd9c6;
+$hover-color: #1c5c77;
+// $hover-color: #556f7a;
+$active-color: #d84936;
+$black-color: #1b1924;
+$white: #f3f2f1;
+
+.heroView {
+  position: relative;
+  width: fill;
+  height: 84.8vh;
+  display: flex;
+  flex-direction: column;
+  .topBox {
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    .myNameFirst {
+      text-transform: lowercase;
+      margin: 0rem;
+      font-size: 5rem;
+      color: $hover-color;
+    }
+    .myNameLast {
+      text-transform: lowercase;
+      margin: 0rem;
+      font-size: 5rem;
+      color: $hover-color;
+    }
+  }
+  .middleBox {
+    padding: 4rem 0rem;
+    height: 33%;
+    // .sumContainer {
+    //   margin: 0% auto;
+    //   width: 50%;
+    //   h1 {
+    //     letter-spacing: -2px;
+    //     font-family: sans-serif;
+    //     text-align: center;
+    //   }
+    // }
+  }
+  .bottomBox {
+    margin: 0% auto;
+    .sumContainer {
+      border-left: 10px solid $black-color;
+      margin: 0% auto;
+      margin-right: 25rem;
+      padding-left: 0.6rem;
+      width: 50%;
+      h1 {
+        letter-spacing: -2px;
+        font-family: sans-serif;
+        // text-align: center;
+      }
+    }
+  }
+}
+
+#divText {
+  // margin-top: 1rem;
+  div {
+    padding-left: 1rem;
+    border-left: 4px solid $black-color;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 95%;
+    h2 {
+      margin: 0rem;
+    }
+  }
+  h3 {
+    font-weight: 100;
+    color: $black-color;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0%;
+    text-align: left;
+  }
+
+  span {
+    padding: 0.6rem 0rem;
+    margin-top: 0rem;
+    display: flex;
+    button {
+      transition: all ease 0.3s;
+    }
+  }
+}
