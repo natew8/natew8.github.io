@@ -9,7 +9,7 @@ $banana: #f7e3af;
 $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 .svg {
-  margin: 0% auto;
+  margin-top: -1.5%;
   // border: 1px solid $black-color;
   transform: rotate(-90deg);
 }
@@ -24,8 +24,10 @@ $oceanGreen: #61c9a8;
   fill-opacity: 0;
   transition: all ease-in-out 0.5s;
 }
+
 .path:hover {
   fill-opacity: 1;
+  cursor: pointer;
 }
 @keyframes dash {
   from {

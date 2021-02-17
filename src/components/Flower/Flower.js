@@ -8,11 +8,12 @@ function Flower(props) {
   return (
     <svg
       className={flowerStyle.svg}
-      width="800"
-      height="700"
+      width="900"
+      height="850"
       x="0px"
       y="0px"
-      viewBox="30 210 700 300"
+      viewBox="0 0 720 720"
+      // viewBox="30 210 700 300"
     >
       <defs>
         <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
