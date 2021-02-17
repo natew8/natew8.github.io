@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Layout from "../Layout/Layout";
 import flowerStyle from "./flower.module.scss";
 
 function Flower(props) {
-  const path = document.querySelector("path");
+  const [fill, setFill] = useState(false);
   return (
     <svg
       className={flowerStyle.svg}
@@ -14,11 +14,19 @@ function Flower(props) {
       y="0px"
       viewBox="30 210 700 300"
     >
+      <defs>
+        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#1b1924" />
+          <stop offset="70%" stop-color="#d84936" />
+        </linearGradient>
+      </defs>
       <path
-        className={flowerStyle.path}
-        stroke="#c97064"
-        strokeWidth="1.5px"
-        fillOpacity={0}
+        onMouseOver={() => setFill(true)}
+        onMouseLeave={() => setFill(false)}
+        className={fill ? flowerStyle.pathExcite : flowerStyle.path}
+        stroke="url(#linear)"
+        strokeWidth="2px"
+        fill="url(#linear)"
         d="M545.44,511.82c0.99-2.42-2.66-4.96-1.1-5.51c1.54-0.55,16.78-23.07,16.78-23.07s9.6-13.47,17.1-19.1
 	c7.51-5.63,13.47-22.52,13.47-22.52s1.1-4.3-4.75-12.92c-5.84-8.61-5.63-14.57-5.63-14.57s4.15-0.33,10.47,7.95
 	c0,0,15.59,10.93,21.45,14.25c0,0,1.1,1,5.08,8.5c3.97,7.51,7.39,15.57,9.05,15.46c1.66-0.11,2.09,0,5.3-4.3
