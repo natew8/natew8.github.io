@@ -14,7 +14,7 @@ function Hero(props) {
         </span>
         <div className={heroStyles.sumContainer}>
           <h1>
-            Full Stack Web Developer / Music Producer
+            Full Stack Web Developer /<br></br> Music Producer
             <h3>
               Passionately working to provide creative and reliable solutions to
               complex roadblocks that will engage and inspire.
@@ -60,7 +60,7 @@ function Hero(props) {
       <span className={heroStyles.bottomBox}>
         <div className={heroStyles.sumContainer}>
           <h1>
-            Full Stack Web Developer / Music Producer<br></br>
+            Full Stack Web Developer /<br></br> Music Producer
             <h3>
               Passionately working to provide creative and reliable solutions
               <br></br> to complex roadblocks that will engage and inspire.
@@ -72,7 +72,7 @@ function Hero(props) {
           <AniLink
             cover
             direction="right"
-            to="/contact"
+            to="/portfolio"
             bg="#1b1924"
             style={{ textDecoration: "none" }}
           >
@@ -81,7 +81,7 @@ function Hero(props) {
           <AniLink
             cover
             direction="right"
-            to="/contact"
+            to="/about"
             bg="#1b1924"
             style={{ textDecoration: "none" }}
           >

@@ -116,33 +116,33 @@ $oceanGreen: #61c9a8;
     z-index: 10;
     transform: rotate(-180deg) translateY(-400px) translateX(-275px);
   }
-  @media (min-height: 850px) {
+  @media (max-height: 850px) {
     .svg {
       transform: rotate(-180deg) translateY(-100px) translateX(-300px);
     }
   }
-  @media (min-height: 970px) {
+  @media (max-height: 970px) {
     .svg {
       transform: rotate(-180deg) translateY(-350px) translateX(-275px);
     }
   }
-  @media (min-height: 900px) {
+  @media (max-height: 900px) {
     .svg {
       transform: rotate(-180deg) translateY(-300px) translateX(-275px);
     }
   }
-  @media (min-height: 1000px) {
+  @media (max-height: 1000px) {
     .svg {
       transform: rotate(-180deg) translateY(-370px) translateX(-275px);
     }
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 700px) {
   .svg {
-    height: 500px;
-    width: 551px;
-    transform: rotate(-180deg) translateY(-300px) translateX(-300px);
+    height: 550px;
+    width: 601px;
+    transform: rotate(-180deg) translateY(-400px) translateX(-300px);
   }
   @media (max-height: 850) {
     .svg {

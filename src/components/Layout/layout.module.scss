@@ -68,3 +68,9 @@ $black-color: #1b1924;
     max-width: 750px;
   }
 }
+
+@media (max-width: 700) {
+  .container {
+    max-width: 650;
+  }
+}
