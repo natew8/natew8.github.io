@@ -9,14 +9,20 @@ $banana: #f7e3af;
 $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 .svg {
-  margin-top: -1.5%;
-  // border: 1px solid $black-color;
+  width: 851px;
+  height: 800px;
+  position: absolute;
+  margin-top: 1.4rem;
+  margin-left: 19rem;
   transform: rotate(-90deg);
+  z-index: 5000;
+  // border: 1px solid #1b1924;
+  padding-bottom: 5.3rem;
 }
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
-  animation: dash 30s infinite forwards;
+  animation: dash 40s infinite backwards;
   animation-direction: alternate;
   animation-timing-function: ease;
   animation-fill-mode: both;
@@ -31,9 +37,47 @@ $oceanGreen: #61c9a8;
 }
 @keyframes dash {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: -2000;
   }
   to {
     stroke-dashoffset: 0;
   }
 }
+
+@media (max-width: 1740px) {
+  .svg {
+    width: 751px;
+    height: 700px;
+    position: absolute;
+    right: 18.62rem;
+    margin-top: 0.5rem;
+    transform: translateX(50px);
+    transform: rotate(-90deg);
+    z-index: 5000;
+  }
+}
+@media (max-width: 1400px) {
+  .svg {
+    width: 651px;
+    height: 600px;
+    position: absolute;
+    margin-top: 1.8rem;
+    transform: rotate(-90deg);
+    z-index: 5000;
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1370px) {
+  .svg {
+    width: 651px;
+    height: 600px;
+    position: absolute;
+    margin-top: 1.8rem;
+    transform: rotate(-90deg);
+    z-index: 5000;
+    padding-bottom: 0px;
+    padding-top: 25px;
+  }
+} ;

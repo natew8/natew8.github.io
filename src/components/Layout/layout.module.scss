@@ -18,3 +18,29 @@ $black-color: #1b1924;
   overflow: hidden;
   flex-grow: 1;
 }
+
+@media (max-width: 1740px) {
+  .container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}

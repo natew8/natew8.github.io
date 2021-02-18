@@ -8,11 +8,9 @@ function Flower(props) {
   return (
     <svg
       className={flowerStyle.svg}
-      width="900"
-      height="850"
       x="0px"
       y="0px"
-      viewBox="0 0 720 720"
+      viewBox="50 0 620 620"
       // viewBox="30 210 700 300"
     >
       <defs>
