@@ -15,9 +15,10 @@ $oceanGreen: #61c9a8;
   margin-top: 1.4rem;
   margin-left: 19rem;
   transform: rotate(-90deg);
-  z-index: 5000;
+  z-index: 10000000;
   // border: 1px solid #1b1924;
   padding-bottom: 5.3rem;
+  transition: translate ease 0.3s;
 }
 .path {
   stroke-dasharray: 1000;
@@ -51,9 +52,8 @@ $oceanGreen: #61c9a8;
     position: absolute;
     right: 18.62rem;
     margin-top: 0.5rem;
-    transform: translateX(50px);
-    transform: rotate(-90deg);
-    z-index: 5000;
+    transform: rotate(-90deg) translateY(5px) translateX(10px);
+    z-index: 50000;
   }
 }
 @media (max-width: 1400px) {
@@ -63,7 +63,7 @@ $oceanGreen: #61c9a8;
     position: absolute;
     margin-top: 1.8rem;
     transform: rotate(-90deg);
-    z-index: 5000;
+    z-index: 5;
     padding-bottom: 0px;
     padding-top: 20px;
   }
@@ -81,6 +81,12 @@ $oceanGreen: #61c9a8;
     padding-top: 25px;
   }
 }
+@media (max-width: 1210px) {
+  .svg {
+    padding: 0rem;
+    transform: rotate(-90deg) translateY(100px);
+  }
+}
 
 @media (max-width: 1025px) {
   .svg {
@@ -88,9 +94,59 @@ $oceanGreen: #61c9a8;
     height: 600px;
     position: absolute;
     margin-top: 1.8rem;
-    transform: rotate(-90deg) translateY(84px);
-    z-index: 5000;
+    transform: rotate(-90deg) translateY(147px);
+    z-index: 10;
     padding-bottom: 0px;
     padding-top: 40px;
+  }
+  @media screen and (min-height: 1000px) {
+    .svg {
+      transform: rotate(-90deg) translateY(147px) translateX(-100px);
+    }
+  }
+  @media screen and (min-height: 1225px) {
+    .svg {
+      transform: rotate(-90deg) translateY(147px) translateX(-175px);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .svg {
+    z-index: 10;
+    transform: rotate(-180deg) translateY(-400px) translateX(-275px);
+  }
+  @media (min-height: 850px) {
+    .svg {
+      transform: rotate(-180deg) translateY(-100px) translateX(-300px);
+    }
+  }
+  @media (min-height: 970px) {
+    .svg {
+      transform: rotate(-180deg) translateY(-350px) translateX(-275px);
+    }
+  }
+  @media (min-height: 900px) {
+    .svg {
+      transform: rotate(-180deg) translateY(-300px) translateX(-275px);
+    }
+  }
+  @media (min-height: 1000px) {
+    .svg {
+      transform: rotate(-180deg) translateY(-370px) translateX(-275px);
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .svg {
+    height: 500px;
+    width: 551px;
+    transform: rotate(-180deg) translateY(-300px) translateX(-300px);
+  }
+  @media (max-height: 850) {
+    .svg {
+      transform: rotate(-180deg) translateY(-200px) translateX(-300px);
+    }
   }
 }

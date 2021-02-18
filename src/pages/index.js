@@ -14,9 +14,9 @@ export default function Home() {
     <Layout>
       <Flower />
       <Hero />
-      <Skills />
+      {/* <Skills />
       <Projects />
-      <Contact />
+      <Contact /> */}
     </Layout>
   );
 }

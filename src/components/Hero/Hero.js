@@ -7,6 +7,51 @@ import heroStyles from "./hero.module.scss";
 function Hero(props) {
   return (
     <div className={heroStyles.heroView}>
+      <span className={heroStyles.tabletBox}>
+        <span className={heroStyles.nameContainer}>
+          <h1 className={heroStyles.myNameFirst}>Nate </h1>
+          <h1 className={heroStyles.myNameLast}>Waite</h1>
+        </span>
+        <div className={heroStyles.sumContainer}>
+          <h1>
+            Full Stack Web Developer / Music Producer
+            <h3>
+              Passionately working to provide creative and reliable solutions to
+              complex roadblocks that will engage and inspire.
+              <br></br>I also make sick beats.
+            </h3>
+          </h1>
+        </div>
+        <div className={heroStyles.buttonBox}>
+          <AniLink
+            cover
+            direction="right"
+            to="/portfolio"
+            bg="#1b1924"
+            style={{ textDecoration: "none" }}
+          >
+            <button className={heroStyles.portButton}>.portfolio</button>
+          </AniLink>
+          <AniLink
+            cover
+            direction="right"
+            to="/about"
+            bg="#1b1924"
+            style={{ textDecoration: "none" }}
+          >
+            <button className={heroStyles.aboutButton}>.about</button>
+          </AniLink>
+          <AniLink
+            cover
+            direction="right"
+            to="/contact"
+            bg="#1b1924"
+            style={{ textDecoration: "none" }}
+          >
+            <button className={heroStyles.contButton}>.contact</button>
+          </AniLink>
+        </div>
+      </span>
       <span className={heroStyles.topBox}>
         <h1 className={heroStyles.myNameFirst}>Nate </h1>
         <h1 className={heroStyles.myNameLast}>Waite</h1>
@@ -18,8 +63,8 @@ function Hero(props) {
             Full Stack Web Developer / Music Producer<br></br>
             <h3>
               Passionately working to provide creative and reliable solutions
-              <br></br> to complex roadblocks that engage and inspire.<br></br>I
-              also make sick beats.
+              <br></br> to complex roadblocks that will engage and inspire.
+              <br></br>I also make sick beats.
             </h3>
           </h1>
         </div>
@@ -31,7 +76,25 @@ function Hero(props) {
             bg="#1b1924"
             style={{ textDecoration: "none" }}
           >
-            <button>.contact</button>
+            <button className={heroStyles.portButton}>.portfolio</button>
+          </AniLink>
+          <AniLink
+            cover
+            direction="right"
+            to="/contact"
+            bg="#1b1924"
+            style={{ textDecoration: "none" }}
+          >
+            <button className={heroStyles.aboutButton}>.about</button>
+          </AniLink>
+          <AniLink
+            cover
+            direction="right"
+            to="/contact"
+            bg="#1b1924"
+            style={{ textDecoration: "none" }}
+          >
+            <button className={heroStyles.contButton}>.contact</button>
           </AniLink>
         </div>
       </span>

@@ -27,9 +27,9 @@ function Menu(props) {
             <div className={menuStyles.line}></div>
           </AniLink>
         </h1>
-        <h1 className={menuStyles.link}>
+        {/* <h1 className={menuStyles.link}>
           <AniLink
-            className={menuStyles.link}
+            className={menuStyles.skillsLink}
             cover
             direction="right"
             bg="#1b1924"
@@ -39,7 +39,7 @@ function Menu(props) {
             .skills
             <div className={menuStyles.line}></div>
           </AniLink>
-        </h1>
+        </h1> */}
         <h1 onClick={() => alert("Coming Soon!")} className={menuStyles.link}>
           {/* <AniLink
             className={menuStyles.link}

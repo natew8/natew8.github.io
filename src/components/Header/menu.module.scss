@@ -58,6 +58,26 @@ $white: #f3f2f1;
     transform: translateX(0);
   }
 }
+.skillsLink {
+  display: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: fit-content;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: sans-serif;
+  color: $nav-color;
+  transition: color ease 0.4s;
+}
+.skillsLink:hover {
+  cursor: pointer;
+  color: #d84936;
+  .line {
+    transform: translateX(0);
+  }
+}
 .line {
   transition: transform ease 0.4s;
   transform: translateX(-100%);
