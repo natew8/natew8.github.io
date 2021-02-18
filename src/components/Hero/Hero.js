@@ -16,7 +16,11 @@ function Hero(props) {
         <div className={heroStyles.sumContainer}>
           <h1>
             Full Stack Web Developer / Music Producer<br></br>
-            <h3>Passi</h3>
+            <h3>
+              Passionately working to provide creative and reliable solutions to
+              complex roadblocks that engage and inspire.<br></br>I also make
+              sick beats.
+            </h3>
           </h1>
         </div>
       </span>
@@ -24,6 +28,10 @@ function Hero(props) {
       <div className={heroStyles.tR}></div>
       <div className={heroStyles.bL}></div>
       <div className={heroStyles.bR}></div>
+      <div className={heroStyles.tLB}></div>
+      <div className={heroStyles.tRB}></div>
+      <div className={heroStyles.bLB}></div>
+      <div className={heroStyles.bRB}></div>
     </div>
     // <motion.div
     //   initial={{ opacity: 0 }}
