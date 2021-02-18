@@ -10,32 +10,40 @@ function Header(props) {
   return (
     <header className={headerStyle.header}>
       <nav className={headerStyle.nav}>
-        <ul>
+        <ul id={headerStyle.listLeft}>
           <li>
-            <a className={headerStyle.link} href="/#about">
+            <AniLink
+              className={headerStyle.link}
+              cover
+              direction="right"
+              to="/about"
+              style={{ textDecoration: "none" }}
+            >
               .about
               <div className={headerStyle.underLine}></div>
-            </a>
+            </AniLink>
           </li>
           <li>
-            <a className={headerStyle.link} href="#skills">
+            <a className={headerStyle.link} name="skills" href="#skills">
               .skills
               <div className={headerStyle.underLine}></div>
             </a>
           </li>
-          <h1 className={headerStyle.logo}>
-            <AniLink
-              cover
-              direction="down"
-              bg="#1b1924"
-              style={{ textDecoration: "none", color: "#1c5c77" }}
-              to="/"
-            >
-              NW
-            </AniLink>
-          </h1>
+        </ul>
+        <h1 className={headerStyle.logo}>
+          <AniLink
+            cover
+            direction="down"
+            bg="#1b1924"
+            style={{ textDecoration: "none", color: "#1c5c77" }}
+            to="/"
+          >
+            NW
+          </AniLink>
+        </h1>
+        <ul id={headerStyle.listRight}>
           <li>
-            <a className={headerStyle.link} href="#projects">
+            <a className={headerStyle.link} href="/#projects">
               .projects
               <div className={headerStyle.underLine}></div>
             </a>
@@ -53,9 +61,10 @@ function Header(props) {
             </AniLink>
           </li>
         </ul>
-        {/* <div>
+
+        <div className={headerStyle.menuContainer}>
           <Menu menu={menu} closeMenu={setMenu} />
-          <h1
+          <div
             onClick={() => setMenu(!menu)}
             className={
               !menu ? headerStyle.burgerMenu : headerStyle.burgerMenuActive
@@ -64,8 +73,8 @@ function Header(props) {
             <div className={headerStyle.burgerBarOne}></div>
             <div className={headerStyle.burgerBarTwo}></div>
             <div className={headerStyle.burgerBarThree}></div>
-          </h1>
-        </div> */}
+          </div>
+        </div>
       </nav>
     </header>
   );

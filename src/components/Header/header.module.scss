@@ -17,7 +17,15 @@ $black-color: #1b1924;
   margin: 0% auto;
   display: flex;
   align-items: center;
-  ul {
+  #listLeft {
+    margin: 0%;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #listRight {
     margin: 0%;
     width: 100%;
     list-style-type: none;
@@ -60,6 +68,10 @@ $black-color: #1b1924;
       transform: translateY(0);
     }
   }
+}
+
+.menuContainer {
+  display: flex;
 }
 .burger-menu {
   display: none;
@@ -158,4 +170,77 @@ $black-color: #1b1924;
   border: 5px solid $active-color;
   color: $black-color;
   padding: 10px;
+}
+
+@media (max-width: 1025px) {
+  .header {
+    margin-bottom: 1rem;
+  }
+  .nav {
+    width: 100%;
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #listLeft {
+      margin: 0%;
+      width: 100%;
+      list-style-type: none;
+      display: none;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #listRight {
+      margin: 0%;
+      width: 100%;
+      list-style-type: none;
+      display: none;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    li {
+      overflow: hidden;
+      text-transform: lowercase;
+      font-family: sans-serif;
+      margin: 0%;
+      width: 5rem;
+      display: flex;
+      align-items: center;
+    }
+    .link {
+      overflow: hidden;
+      margin: 0% auto;
+      letter-spacing: 2px;
+      font-weight: 500;
+      overflow-x: hidden;
+      text-decoration: none;
+      color: #000;
+      transition: color ease 0.3s;
+      .underLine {
+        margin: 0% auto;
+        transform: translateY(3px);
+        width: 0%;
+        height: 0%;
+        border: 0.5px solid $active-color;
+        transition: all ease-in 0.25s;
+      }
+    }
+    .link:hover {
+      font-weight: 500;
+      color: $active-color;
+      .underLine {
+        width: 100%;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .burger-menu {
+    display: flex;
+    margin: 0px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
 }

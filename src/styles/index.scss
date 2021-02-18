@@ -11,6 +11,7 @@ html {
   background-color: $nav-color;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-snap-type: y mandatory;
 }
 html::-webkit-scrollbar {
   display: none;

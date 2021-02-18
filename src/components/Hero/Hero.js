@@ -23,6 +23,9 @@ function Hero(props) {
             </h3>
           </h1>
         </div>
+        <div className={heroStyles.buttonBox}>
+          <button>.contact</button>
+        </div>
       </span>
       <div className={heroStyles.tL}></div>
       <div className={heroStyles.tR}></div>

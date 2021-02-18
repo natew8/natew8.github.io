@@ -6,6 +6,7 @@ $black-color: #1b1924;
 $white: #f3f2f1;
 
 .heroView {
+  scroll-snap-align: start;
   position: relative;
   width: fill;
   height: 84.8vh;
@@ -60,7 +61,9 @@ $white: #f3f2f1;
     }
   }
 }
-
+.buttonBox {
+  display: none;
+}
 #divText {
   // margin-top: 1rem;
   div {
@@ -282,6 +285,26 @@ $white: #f3f2f1;
           margin: 0%;
         }
       }
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .heroView {
+    margin-bottom: 3rem;
+  }
+  .bottomBox {
+    margin-top: 2rem;
+  }
+  .buttonBox {
+    display: block;
+    padding-left: 2.5rem;
+    button {
+      font-weight: 700;
+      font-family: sans-serif;
+      text-transform: lowercase;
+      background-color: transparent;
+      border: 2px solid $black-color;
+      width: 6rem;
     }
   }
 }

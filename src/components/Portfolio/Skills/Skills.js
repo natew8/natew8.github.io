@@ -188,7 +188,7 @@ function Skills(props) {
     );
   });
   return (
-    <div>
+    <div name="skills" id="skills">
       <p className={skillStyles.tags}>{`<div className='skills'>`}</p>
       <p className={skillStyles.innerTags}>{`<div className='front'>`}</p>
       <div className={skillStyles.container}>

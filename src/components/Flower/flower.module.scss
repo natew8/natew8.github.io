@@ -80,4 +80,17 @@ $oceanGreen: #61c9a8;
     padding-bottom: 0px;
     padding-top: 25px;
   }
-} ;
+}
+
+@media (max-width: 1025px) {
+  .svg {
+    width: 651px;
+    height: 600px;
+    position: absolute;
+    margin-top: 1.8rem;
+    transform: rotate(-90deg) translateY(84px);
+    z-index: 5000;
+    padding-bottom: 0px;
+    padding-top: 40px;
+  }
+}

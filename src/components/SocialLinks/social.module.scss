@@ -180,3 +180,9 @@ $white: #f3f2f1;
     }
   }
 }
+
+@media (max-width: 1025px) {
+  .iconContainer {
+    display: none;
+  }
+}
