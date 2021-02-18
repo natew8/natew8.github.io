@@ -56,7 +56,6 @@ $oceanGreen: #61c9a8;
     z-index: 5000;
   }
 }
-
 @media (max-width: 1400px) {
   .svg {
     width: 651px;
@@ -69,3 +68,16 @@ $oceanGreen: #61c9a8;
     padding-top: 20px;
   }
 }
+
+@media (max-width: 1370px) {
+  .svg {
+    width: 651px;
+    height: 600px;
+    position: absolute;
+    margin-top: 1.8rem;
+    transform: rotate(-90deg);
+    z-index: 5000;
+    padding-bottom: 0px;
+    padding-top: 25px;
+  }
+} ;
