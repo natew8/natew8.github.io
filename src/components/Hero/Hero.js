@@ -24,7 +24,15 @@ function Hero(props) {
           </h1>
         </div>
         <div className={heroStyles.buttonBox}>
-          <button>.contact</button>
+          <AniLink
+            cover
+            direction="right"
+            to="/contact"
+            bg="#1b1924"
+            style={{ textDecoration: "none" }}
+          >
+            <button>.contact</button>
+          </AniLink>
         </div>
       </span>
       <div className={heroStyles.tL}></div>

@@ -44,3 +44,9 @@ $black-color: #1b1924;
     min-height: 100vh;
   }
 }
+
+@media (max-width: 1210px) {
+  .container {
+    max-width: 1024px;
+  }
+}

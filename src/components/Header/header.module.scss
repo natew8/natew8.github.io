@@ -17,6 +17,9 @@ $black-color: #1b1924;
   margin: 0% auto;
   display: flex;
   align-items: center;
+  ul {
+    display: flex;
+  }
   #listLeft {
     margin: 0%;
     width: 100%;

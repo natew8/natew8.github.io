@@ -305,6 +305,12 @@ $white: #f3f2f1;
       background-color: transparent;
       border: 2px solid $black-color;
       width: 6rem;
+      transition: all ease 0.3s;
+    }
+    button:hover {
+      color: $nav-color;
+      cursor: pointer;
+      background-color: $hover-color;
     }
   }
 }
