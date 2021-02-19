@@ -8,3 +8,14 @@ $white: #f3f2f1;
   margin: 0rem;
   color: $hover-color;
 }
+
+@media (max-width: 425px) {
+  .p {
+    font-size: 0.3rem;
+  }
+}
+@media (max-width: 320px) {
+  .p {
+    font-size: 0.3rem;
+  }
+}

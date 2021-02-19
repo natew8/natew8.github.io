@@ -150,3 +150,44 @@ $oceanGreen: #61c9a8;
     }
   }
 }
+
+@media (max-width: 425px) {
+  .svg {
+    width: 450px;
+    height: 501px;
+    transform: rotate(-90deg) translateY(260px) translateX(-150px);
+  }
+}
+
+@media (max-width: 414px) {
+  .svg {
+    width: 400px;
+    height: 451px;
+    transform: rotate(-90deg) translateY(240px) translateX(-140px);
+  }
+
+  @media (min-height: 896px) {
+    .svg {
+      width: 400px;
+      height: 451px;
+      transform: rotate(-90deg) translateY(240px) translateX(-190px);
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  @media (min-height: 812px) {
+    .svg {
+      width: 400px;
+      height: 451px;
+      transform: rotate(-90deg) translateY(260px) translateX(-190px);
+    }
+  }
+}
+@media (max-width: 320px) {
+  .svg {
+    width: 400px;
+    height: 451px;
+    transform: rotate(-90deg) translateY(280px) translateX(-150px);
+  }
+}

@@ -18,6 +18,7 @@ $white: #f3f2f1;
   }
   .topBox {
     width: 35rem;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -435,8 +436,6 @@ $white: #f3f2f1;
     }
   }
 }
-@media (max-width: 780px) {
-}
 
 @media (max-width: 700px) {
   .heroView {
@@ -461,7 +460,7 @@ $white: #f3f2f1;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 425px) {
   .heroView {
     .tabletBox {
       margin: 0% auto;
@@ -476,6 +475,7 @@ $white: #f3f2f1;
       }
     }
     .sumContainer {
+      margin-bottom: 12rem;
       h1 {
         text-align: center;
         font-size: 0.9rem;
@@ -484,6 +484,140 @@ $white: #f3f2f1;
         font-weight: 400;
         text-align: center;
         font-size: 0.8rem;
+      }
+    }
+    .buttonBox {
+      button {
+        height: 2rem;
+        width: 20rem;
+      }
+    }
+  }
+  .tLB,
+  .tRB,
+  .bRB,
+  .bLB {
+    display: none;
+  }
+  @media (max-height: 895px) {
+    .heroView {
+      .tabletBox {
+        margin: 0% auto;
+        width: 90%;
+      }
+      .nameContainer {
+        .myNameFirst {
+          margin: 0%;
+        }
+        .myNameLast {
+          margin: 0%;
+        }
+      }
+      .sumContainer {
+        margin-bottom: 24.5rem;
+        h1 {
+          text-align: center;
+          font-size: 0.9rem;
+        }
+        h3 {
+          font-weight: 400;
+          text-align: center;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .tLB,
+    .tRB,
+    .bRB,
+    .bLB {
+      display: none;
+    }
+  }
+}
+@media (max-width: 414px) {
+  .heroView {
+    .tabletBox {
+      .sumContainer {
+        margin-bottom: 17rem;
+      }
+    }
+    .buttonBox {
+      button {
+        width: 20rem;
+      }
+    }
+  }
+
+  @media (min-height: 896px) {
+    .heroView {
+      .tabletBox {
+        .sumContainer {
+          margin-bottom: 24rem;
+          h1 {
+            font-size: 1rem;
+          }
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .heroView {
+    .tabletBox {
+      .sumContainer {
+        margin-bottom: 12rem;
+      }
+    }
+    .buttonBox {
+      button {
+        width: 19rem;
+      }
+    }
+  }
+  @media (min-height: 812px) {
+    .heroView {
+      .tabletBox {
+        .sumContainer {
+          margin-bottom: 20rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .heroView {
+    .tabletBox {
+      margin: 0% auto;
+      width: 95%;
+    }
+    .nameContainer {
+      .myNameFirst {
+        margin: 0%;
+      }
+      .myNameLast {
+        margin: 0%;
+      }
+    }
+    .sumContainer {
+      margin-bottom: 0%;
+      margin-bottom: 12rem;
+      h1 {
+        text-align: center;
+        font-size: 0.9rem;
+      }
+      h3 {
+        font-weight: 400;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+    }
+    .buttonBox {
+      button {
+        height: 1.7rem;
+        width: 14rem;
       }
     }
   }
