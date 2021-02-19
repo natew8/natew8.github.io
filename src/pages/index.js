@@ -11,12 +11,14 @@ export default function Home() {
   setTimeout(() => [setDone(true)], 2000);
 
   return (
-    <Layout>
-      <Flower />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
-    </Layout>
+    <>
+      <Layout>
+        <Hero />
+        <Flower />
+        <Skills />
+        <Projects />
+        <Contact />
+      </Layout>
+    </>
   );
 }

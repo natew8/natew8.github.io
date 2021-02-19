@@ -8,14 +8,14 @@ $white: #f3f2f1;
 #container {
   padding: 0rem 1rem 1rem 1rem;
   position: fixed;
+  translate: 100vw;
   top: 0px;
   right: 0%;
-  transform: translateX(100vw);
   height: 100vh;
   width: 100vw;
   background-color: $black-color;
   z-index: 9000;
-  transition: all ease 0.5s;
+  // transition: all ease 0.5s;
   display: flex;
   flex-direction: column;
   ul {
@@ -37,8 +37,12 @@ $white: #f3f2f1;
 .exit:hover {
   cursor: pointer;
 }
+
 #container.show {
   transform: translateX(0);
+}
+#container.hide {
+  transform: translateX(100vw);
 }
 .link {
   margin: 0%;

@@ -4,10 +4,46 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Titles from "../Titles/Titles";
 import heroStyles from "./hero.module.scss";
 
+const variants = {
+  hidden: {
+    opacity: 0,
+    x: "10rem",
+  },
+  visible: {
+    opacity: 1,
+    x: "0",
+    transition: {
+      delay: 2,
+      duration: 0.5,
+    },
+  },
+};
+
 function Hero(props) {
   return (
     <div className={heroStyles.heroView}>
-      <span className={heroStyles.tabletBox}>
+      <motion.div
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        className={heroStyles.mainBox}
+      >
+        <div className={heroStyles.nameContainer}>
+          <h1 className={heroStyles.myNameFirst}>Nate </h1>
+          <h1 className={heroStyles.myNameLast}>Waite</h1>
+        </div>
+        <div className={heroStyles.sumContainer}>
+          <h1>
+            Full Stack Web Developer /<br></br> Music Producer
+            <h3>
+              Passionately working to provide creative and reliable solutions to
+              complex roadblocks that will engage and inspire.
+              <br></br>I also make sick beats.
+            </h3>
+          </h1>
+        </div>
+      </motion.div>
+      {/* <span className={heroStyles.tabletBox}>
         <span className={heroStyles.nameContainer}>
           <h1 className={heroStyles.myNameFirst}>Nate </h1>
           <h1 className={heroStyles.myNameLast}>Waite</h1>
@@ -56,7 +92,7 @@ function Hero(props) {
         <h1 className={heroStyles.myNameFirst}>Nate </h1>
         <h1 className={heroStyles.myNameLast}>Waite</h1>
       </span>
-      {/* <span className={heroStyles.middleBox}></span> */}
+      <span className={heroStyles.middleBox}></span>
       <span className={heroStyles.bottomBox}>
         <div className={heroStyles.sumContainer}>
           <h1>
@@ -97,7 +133,7 @@ function Hero(props) {
             <button className={heroStyles.contButton}>.contact</button>
           </AniLink>
         </div>
-      </span>
+      </span> */}
       <div className={heroStyles.tL}></div>
       <div className={heroStyles.tR}></div>
       <div className={heroStyles.bL}></div>

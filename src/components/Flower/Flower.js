@@ -4,13 +4,16 @@ import Layout from "../Layout/Layout";
 import flowerStyle from "./flower.module.scss";
 
 function Flower(props) {
-  const [fill, setFill] = useState(false);
+  const [fill, setFill] = useState(true);
+  setTimeout(() => {
+    setFill(false);
+  }, 3000);
   return (
     <svg
       className={flowerStyle.svg}
       x="0px"
       y="0px"
-      viewBox="50 0 620 620"
+      viewBox="0 0 1100 1100"
       // viewBox="30 210 700 300"
     >
       <defs>

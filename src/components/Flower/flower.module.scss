@@ -9,16 +9,15 @@ $banana: #f7e3af;
 $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 .svg {
-  width: 851px;
-  height: 800px;
+  padding: 0%;
+  width: 80%;
+  height: 50%;
   position: absolute;
-  margin-top: 1.4rem;
-  margin-left: 19rem;
-  transform: rotate(-90deg);
-  z-index: 10000000;
-  // border: 1px solid #1b1924;
-  padding-bottom: 5.3rem;
-  transition: translate ease 0.3s;
+  top: 0%;
+  z-index: -1000;
+  margin-top: 0;
+  transform: rotate(-90deg) translateX(550px) translateY(360px);
+  transition: all ease 2s;
 }
 .path {
   stroke-dasharray: 1000;
@@ -44,157 +43,161 @@ $oceanGreen: #61c9a8;
     stroke-dashoffset: 0;
   }
 }
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+  .svg {
+    transform: rotate(-90deg) translateX(550px) translateY(360px);
+  }
+}
+// @media (max-width: 1740px) {
+//   .svg {
+//     width: 751px;
+//     height: 700px;
+//     position: absolute;
+//     right: 18.62rem;
+//     margin-top: 0.5rem;
+//     transform: rotate(-90deg) translateY(5px) translateX(10px);
+//     z-index: 50000;
+//   }
+// }
+// @media (max-width: 1400px) {
+//   .svg {
+//     width: 651px;
+//     height: 600px;
+//     position: absolute;
+//     margin-top: 1.8rem;
+//     transform: rotate(-90deg);
+//     z-index: 5;
+//     padding-bottom: 0px;
+//     padding-top: 20px;
+//   }
+// }
 
-@media (max-width: 1740px) {
-  .svg {
-    width: 751px;
-    height: 700px;
-    position: absolute;
-    right: 18.62rem;
-    margin-top: 0.5rem;
-    transform: rotate(-90deg) translateY(5px) translateX(10px);
-    z-index: 50000;
-  }
-}
-@media (max-width: 1400px) {
-  .svg {
-    width: 651px;
-    height: 600px;
-    position: absolute;
-    margin-top: 1.8rem;
-    transform: rotate(-90deg);
-    z-index: 5;
-    padding-bottom: 0px;
-    padding-top: 20px;
-  }
-}
+// @media (max-width: 1370px) {
+//   .svg {
+//     width: 651px;
+//     height: 600px;
+//     position: absolute;
+//     margin-top: 1.8rem;
+//     transform: rotate(-90deg);
+//     z-index: 5000;
+//     padding-bottom: 0px;
+//     padding-top: 25px;
+//   }
+// }
+// @media (max-width: 1210px) {
+//   .svg {
+//     padding: 0rem;
+//     transform: rotate(-90deg) translateY(100px);
+//   }
+// }
 
-@media (max-width: 1370px) {
-  .svg {
-    width: 651px;
-    height: 600px;
-    position: absolute;
-    margin-top: 1.8rem;
-    transform: rotate(-90deg);
-    z-index: 5000;
-    padding-bottom: 0px;
-    padding-top: 25px;
-  }
-}
-@media (max-width: 1210px) {
-  .svg {
-    padding: 0rem;
-    transform: rotate(-90deg) translateY(100px);
-  }
-}
+// @media (max-width: 1025px) {
+//   .svg {
+//     width: 651px;
+//     height: 600px;
+//     position: absolute;
+//     margin-top: 1.8rem;
+//     transform: rotate(-90deg) translateY(147px);
+//     z-index: 10;
+//     padding-bottom: 0px;
+//     padding-top: 40px;
+//   }
+//   @media screen and (min-height: 1000px) {
+//     .svg {
+//       transform: rotate(-90deg) translateY(147px) translateX(-100px);
+//     }
+//   }
+//   @media screen and (min-height: 1225px) {
+//     .svg {
+//       transform: rotate(-90deg) translateY(147px) translateX(-175px);
+//     }
+//   }
+// }
 
-@media (max-width: 1025px) {
-  .svg {
-    width: 651px;
-    height: 600px;
-    position: absolute;
-    margin-top: 1.8rem;
-    transform: rotate(-90deg) translateY(147px);
-    z-index: 10;
-    padding-bottom: 0px;
-    padding-top: 40px;
-  }
-  @media screen and (min-height: 1000px) {
-    .svg {
-      transform: rotate(-90deg) translateY(147px) translateX(-100px);
-    }
-  }
-  @media screen and (min-height: 1225px) {
-    .svg {
-      transform: rotate(-90deg) translateY(147px) translateX(-175px);
-    }
-  }
-}
+// @media (max-width: 900px) {
+//   .svg {
+//     z-index: 10;
+//     transform: rotate(-180deg) translateY(-400px) translateX(-275px);
+//   }
+//   @media (max-height: 850px) {
+//     .svg {
+//       transform: rotate(-180deg) translateY(-100px) translateX(-300px);
+//     }
+//   }
+//   @media (max-height: 970px) {
+//     .svg {
+//       transform: rotate(-180deg) translateY(-350px) translateX(-275px);
+//     }
+//   }
+//   @media (max-height: 900px) {
+//     .svg {
+//       transform: rotate(-180deg) translateY(-300px) translateX(-275px);
+//     }
+//   }
+//   @media (max-height: 1000px) {
+//     .svg {
+//       transform: rotate(-180deg) translateY(-370px) translateX(-275px);
+//     }
+//   }
+// }
 
-@media (max-width: 900px) {
-  .svg {
-    z-index: 10;
-    transform: rotate(-180deg) translateY(-400px) translateX(-275px);
-  }
-  @media (max-height: 850px) {
-    .svg {
-      transform: rotate(-180deg) translateY(-100px) translateX(-300px);
-    }
-  }
-  @media (max-height: 970px) {
-    .svg {
-      transform: rotate(-180deg) translateY(-350px) translateX(-275px);
-    }
-  }
-  @media (max-height: 900px) {
-    .svg {
-      transform: rotate(-180deg) translateY(-300px) translateX(-275px);
-    }
-  }
-  @media (max-height: 1000px) {
-    .svg {
-      transform: rotate(-180deg) translateY(-370px) translateX(-275px);
-    }
-  }
-}
+// @media (max-width: 700px) {
+//   .svg {
+//     height: 550px;
+//     width: 601px;
+//     transform: rotate(-180deg) translateY(-400px) translateX(-300px);
+//   }
+//   @media (max-height: 850) {
+//     .svg {
+//       transform: rotate(-180deg) translateY(-200px) translateX(-300px);
+//     }
+//   }
+// }
 
-@media (max-width: 700px) {
-  .svg {
-    height: 550px;
-    width: 601px;
-    transform: rotate(-180deg) translateY(-400px) translateX(-300px);
-  }
-  @media (max-height: 850) {
-    .svg {
-      transform: rotate(-180deg) translateY(-200px) translateX(-300px);
-    }
-  }
-}
+// @media (max-width: 425px) {
+//   .svg {
+//     width: 450px;
+//     height: 501px;
+//     transform: rotate(-90deg) translateY(260px) translateX(-150px);
+//   }
+// }
 
-@media (max-width: 425px) {
-  .svg {
-    width: 450px;
-    height: 501px;
-    transform: rotate(-90deg) translateY(260px) translateX(-150px);
-  }
-}
+// @media (max-width: 414px) {
+//   .svg {
+//     width: 400px;
+//     height: 451px;
+//     transform: rotate(-90deg) translateY(240px) translateX(-140px);
+//   }
 
-@media (max-width: 414px) {
-  .svg {
-    width: 400px;
-    height: 451px;
-    transform: rotate(-90deg) translateY(240px) translateX(-140px);
-  }
+//   @media (min-height: 896px) {
+//     .svg {
+//       width: 400px;
+//       height: 451px;
+//       transform: rotate(-90deg) translateY(240px) translateX(-190px);
+//     }
+//   }
+// }
 
-  @media (min-height: 896px) {
-    .svg {
-      width: 400px;
-      height: 451px;
-      transform: rotate(-90deg) translateY(240px) translateX(-190px);
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  @media (min-height: 812px) {
-    .svg {
-      width: 400px;
-      height: 451px;
-      transform: rotate(-90deg) translateY(260px) translateX(-190px);
-    }
-  }
-  @media (min-height: 667px) {
-    .svg {
-      width: 340px;
-      height: 401px;
-      transform: rotate(-90deg) translateY(235px) translateX(-150px);
-    }
-  }
-}
-@media (max-width: 320px) {
-  .svg {
-    width: 400px;
-    height: 451px;
-    transform: rotate(-90deg) translateY(280px) translateX(-150px);
-  }
-}
+// @media (max-width: 375px) {
+//   @media (min-height: 812px) {
+//     .svg {
+//       width: 400px;
+//       height: 451px;
+//       transform: rotate(-90deg) translateY(260px) translateX(-190px);
+//     }
+//   }
+//   @media (min-height: 667px) {
+//     .svg {
+//       width: 340px;
+//       height: 401px;
+//       transform: rotate(-90deg) translateY(235spx) translateX(-150px);
+//     }
+//   }
+// }
+// @media (max-width: 320px) {
+//   .svg {
+//     width: 400px;
+//     height: 451px;
+//     transform: rotate(-90deg) translateY(280px) translateX(-150px);
+//   }
+// }
