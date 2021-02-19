@@ -547,7 +547,19 @@ $white: #f3f2f1;
       }
     }
   }
+  @media (min-height: 846px) {
+    .heroView {
+      .tabletBox {
+        .sumContainer {
+          margin-bottom: 23rem;
 
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
   @media (min-height: 896px) {
     .heroView {
       .tabletBox {
@@ -581,7 +593,7 @@ $white: #f3f2f1;
     .heroView {
       .tabletBox {
         .sumContainer {
-          margin-bottom: 20rem;
+          margin-bottom: 21rem;
         }
       }
     }
@@ -626,5 +638,19 @@ $white: #f3f2f1;
   .bRB,
   .bLB {
     display: none;
+  }
+  @media (min-height: 740px) {
+    .heroView {
+      .tabletBox {
+        .sumContainer {
+          margin-bottom: 20rem;
+        }
+      }
+      .buttonBox {
+        button {
+          width: 18rem;
+        }
+      }
+    }
   }
 }

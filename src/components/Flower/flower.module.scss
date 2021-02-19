@@ -183,6 +183,13 @@ $oceanGreen: #61c9a8;
       transform: rotate(-90deg) translateY(260px) translateX(-190px);
     }
   }
+  @media (min-height: 667px) {
+    .svg {
+      width: 340px;
+      height: 401px;
+      transform: rotate(-90deg) translateY(235px) translateX(-150px);
+    }
+  }
 }
 @media (max-width: 320px) {
   .svg {
