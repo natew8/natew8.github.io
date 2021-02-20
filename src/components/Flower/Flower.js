@@ -13,7 +13,7 @@ function Flower(props) {
       className={flowerStyle.svg}
       x="0px"
       y="0px"
-      viewBox="0 0 1100 1100"
+      viewBox="0 0 700 700"
       // viewBox="30 210 700 300"
     >
       <defs>
