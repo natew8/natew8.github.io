@@ -313,13 +313,13 @@ function Skills(props) {
   });
   return (
     <div name="skills" id="skills" className={skillStyles.skillsView}>
-      <div className={skillStyles.quoteBox}>
+      {/* <div className={skillStyles.quoteBox}>
         <h1>
           “Unless you try to do something beyond what you have already mastered,
           you will never grow.”
+          <h5>- Ronald E. Osborn</h5>
         </h1>
-        <h5>- Ronald E. Osborn</h5>
-      </div>
+      </div> */}
       <div className={skillStyles.container}>
         <span className={skillStyles.topBox}>{mappedClientSkills}</span>
       </div>

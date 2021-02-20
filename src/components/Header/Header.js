@@ -1,4 +1,5 @@
 import { Link } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React, { useState } from "react";
 import headerStyle from "./header.module.scss";
@@ -11,23 +12,17 @@ function Header(props) {
     <header className={headerStyle.header}>
       <nav className={headerStyle.nav}>
         <ul id={headerStyle.listLeft}>
-          <li>
-            <AniLink
-              className={headerStyle.link}
-              cover
-              direction="right"
-              to="/about"
-              style={{ textDecoration: "none" }}
-            >
+          <li onClick={() => scrollTo("#about")}>
+            <h1 className={headerStyle.link}>
               .about
               <div className={headerStyle.underLine}></div>
-            </AniLink>
+            </h1>
           </li>
-          <li>
-            <a className={headerStyle.link} name="skills" href="#skills">
+          <li onClick={() => scrollTo("#skills")}>
+            <h1 className={headerStyle.link}>
               .skills
               <div className={headerStyle.underLine}></div>
-            </a>
+            </h1>
           </li>
         </ul>
         <h1 className={headerStyle.logo}>

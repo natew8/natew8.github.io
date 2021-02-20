@@ -22,7 +22,6 @@ function Layout(props) {
         className={layoutStyles.container}
       >
         <Header />
-        {/* <Flower /> */}
         <SocialLinks />
         <div className={layoutStyles.content}>{props.children}</div>
         <Footer />

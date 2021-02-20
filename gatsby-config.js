@@ -6,5 +6,6 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-scroll-reveal",
     "gatsby-plugin-transition-link",
+    "gatsby-plugin-smoothscroll",
   ],
 };

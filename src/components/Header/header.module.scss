@@ -48,6 +48,7 @@ $black-color: #1b1924;
   .link {
     overflow: hidden;
     margin: 0% auto;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 500;
     overflow-x: hidden;
@@ -64,6 +65,7 @@ $black-color: #1b1924;
     }
   }
   .link:hover {
+    cursor: pointer;
     font-weight: 500;
     color: $active-color;
     .underLine {

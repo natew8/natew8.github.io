@@ -1,0 +1,84 @@
+$nav-color: #dcd9c6;
+$hover-color: #1c5c77;
+// $active-color: #c97064;
+$active-color: #d84936;
+$black-color: #1b1924;
+.about {
+  margin-bottom: 1rem;
+}
+.aboutHead {
+  display: flex;
+}
+.quoteBox {
+  width: 100%;
+  margin: 0%;
+  padding: 1rem 0.6rem;
+  color: $nav-color;
+  background-color: $black-color;
+  border: 1px solid $black-color;
+  text-align: center;
+  h1 {
+    margin: 0rem;
+    h5 {
+      margin: 0rem;
+      margin-top: 5px;
+    }
+  }
+}
+.nameContent {
+  margin: 2rem 0rem;
+  width: 100%;
+  .intro {
+    width: 57%;
+    font-size: 3rem;
+    color: $black-color;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $black-color;
+    .myNameFirst {
+      font-size: 4rem;
+      color: $active-color;
+      margin: 0%;
+      margin-left: 0.5rem;
+    }
+  }
+}
+.imageOne {
+  // box-shadow: 5px 10px 0px $active-color, 10px 20px 0px $hover-color,
+  //   15px 30px 0px $black-color;
+  float: right;
+  width: 35%;
+  margin: 1rem 0rem;
+}
+.pA {
+  color: $black-color;
+  letter-spacing: 0px;
+  line-height: 45px;
+  font-size: 1.5rem;
+  border-left: 4px solid $black-color;
+  padding-left: 0.6rem;
+}
+
+.contactBox {
+  background-color: $black-color;
+  color: $nav-color;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 0rem;
+  h1 {
+    margin: 0rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .contact {
+    outline: none;
+    background-color: transparent;
+    border: 3px solid $nav-color;
+    margin: 0% auto;
+    width: 20%;
+    color: $nav-color;
+    font-size: 1.6rem;
+    height: 2.5rem;
+  }
+}

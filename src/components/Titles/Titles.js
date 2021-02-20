@@ -20,7 +20,7 @@ function Titles(props) {
         setCount((count) => count - 6);
         timesRun = 0;
       }
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 

@@ -1,6 +1,9 @@
 $hover-color: #1c5c77;
+$active-color: #d84936;
 
 .title {
-  color: #1c5c77;
-  opacity: 0;
+  font-size: 4rem;
+  margin: 0%;
+  margin-left: 0.6rem;
+  color: $hover-color;
 }
