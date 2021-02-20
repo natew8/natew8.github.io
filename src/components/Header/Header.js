@@ -25,7 +25,7 @@ function Header(props) {
             </h1>
           </li>
         </ul>
-        <h1 className={headerStyle.logo}>
+        <h1 onClick={() => scrollTo("#top")} className={headerStyle.logo}>
           <AniLink
             cover
             direction="down"

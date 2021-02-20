@@ -22,7 +22,7 @@ const variants = {
 
 function Hero(props) {
   return (
-    <div className={heroStyles.heroView}>
+    <div id="top" className={heroStyles.heroView}>
       <Flower />
       <motion.div
         variants={variants}
@@ -42,6 +42,7 @@ function Hero(props) {
               complex roadblocks that will engage and inspire.
               <br></br>I also make sick beats.
             </h3>
+            <h4>* Pardon our dust. Site Currently under construction.</h4>
           </h1>
         </div>
       </motion.div>
