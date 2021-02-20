@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout/Layout";
-import Flower from "../components/Flower/Flower";
 import Hero from "../components/Hero/Hero";
 import Skills from "../components/Portfolio/Skills/Skills";
 import Projects from "../components/Portfolio/Projects/Projects";
@@ -15,7 +14,6 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <Flower />
         <Hero />
         <h1 id="about" className={homeStyles.sectionTitle}>
           Introductions

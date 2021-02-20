@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Layout from "../Layout/Layout";
 import flowerStyle from "./flower.module.scss";
@@ -7,7 +7,8 @@ function Flower(props) {
   const [fill, setFill] = useState(true);
   setTimeout(() => {
     setFill(false);
-  }, 3000);
+  }, 5000);
+
   return (
     <svg
       className={flowerStyle.svg}

@@ -7,6 +7,7 @@ import layoutStyles from "./layout.module.scss";
 import SocialLinks from "../SocialLinks/SocialLinks";
 
 function Layout(props) {
+  const [height, setHeight] = useState(0);
   const [intro, setIntro] = useState(true);
   setTimeout(() => {
     setIntro(false);

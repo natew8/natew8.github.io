@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Titles from "../Titles/Titles";
 import heroStyles from "./hero.module.scss";
+import Flower from "../Flower/Flower";
 
 const variants = {
   hidden: {
@@ -22,6 +23,7 @@ const variants = {
 function Hero(props) {
   return (
     <div className={heroStyles.heroView}>
+      <Flower />
       <motion.div
         variants={variants}
         initial="hidden"

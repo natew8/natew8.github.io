@@ -11,12 +11,12 @@ $oceanGreen: #61c9a8;
 .svg {
   padding: 0%;
   width: 90%;
-  height: 80%;
+  height: 100%;
   position: absolute;
   top: 0%;
   z-index: -1000;
   margin-top: 0;
-  transform: rotate(-90deg) translateX(-100px) translateY(50px);
+  transform: rotate(-90deg) translateX(0px) translateY(65px);
   transition: all ease 2s;
 }
 .path {

@@ -69,13 +69,6 @@ const mySkills = [
       "invert(35%) sepia(16%) saturate(1807%) hue-rotate(165deg) brightness(96%) contrast(87%)",
   },
   {
-    id: 17,
-    name: "GraphQL",
-    icon: "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/graphql.svg",
-    color:
-      "invert(23%) sepia(72%) saturate(6270%) hue-rotate(306deg) brightness(85%) contrast(118%)",
-  },
-  {
     id: 13,
     name: "Postman",
     icon: "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/postman.svg",
@@ -89,21 +82,13 @@ const mySkills = [
     color:
       "invert(42%) sepia(51%) saturate(4130%) hue-rotate(343deg) brightness(98%) contrast(92%)",
   },
-  // {
-  //   id: 15,
-  //   name: "Github",
-  //   icon: "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/github.svg",
-  //   color:
-  //     "invert(33%) sepia(17%) saturate(5651%) hue-rotate(239deg) brightness(85%) contrast(94%)",
-  // },
-  // {
-  //   id: 16,
-  //   name: "AWS",
-  //   icon:
-  //     "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/amazonaws.svg",
-  //   color:
-  //     "invert(13%) sepia(40%) saturate(577%) hue-rotate(173deg) brightness(98%) contrast(88%)",
-  // },
+  {
+    id: 15,
+    name: "Github",
+    icon: "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/github.svg",
+    color:
+      "invert(33%) sepia(17%) saturate(5651%) hue-rotate(239deg) brightness(85%) contrast(94%)",
+  },
   {
     id: 18,
     name: "Heroku",
@@ -133,15 +118,6 @@ const mySkills = [
     color:
       "invert(32%) sepia(35%) saturate(1520%) hue-rotate(315deg) brightness(105%) contrast(100%",
   },
-
-  // {
-  //   id: 9,
-  //   name: "NextJS",
-  //   icon:
-  //     "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/next-dot-js.svg",
-  //   color:
-  //     "invert(0%) sepia(100%) saturate(7461%) hue-rotate(72deg) brightness(105%) contrast(108%)",
-  // },
 ];
 const backObject = [
   {
@@ -313,13 +289,6 @@ function Skills(props) {
   });
   return (
     <div name="skills" id="skills" className={skillStyles.skillsView}>
-      {/* <div className={skillStyles.quoteBox}>
-        <h1>
-          “Unless you try to do something beyond what you have already mastered,
-          you will never grow.”
-          <h5>- Ronald E. Osborn</h5>
-        </h1>
-      </div> */}
       <div className={skillStyles.container}>
         <span className={skillStyles.topBox}>{mappedClientSkills}</span>
       </div>
