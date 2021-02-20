@@ -123,6 +123,7 @@ input,
 optgroup,
 select,
 textarea {
+  text-transform: lowercase;
   font: inherit;
   margin: 0;
 }
@@ -131,6 +132,7 @@ optgroup {
 }
 button,
 input {
+  text-transform: lowercase;
   overflow: visible;
 }
 button,

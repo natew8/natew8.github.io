@@ -25,7 +25,7 @@ function About(props) {
           </h1>
           For as long as I can remember I've had a passion for Creating.
           <br></br>From music to science, from theatre to web development, I
-          live for the magic that comes from making something that have the
+          live for the magic that comes from making something that has the
           opportunity to impact peoples lives.
           <br></br> When I'm not making sweet stuff with code, I'm usually
           working on my next music adventure. I've been producing music since

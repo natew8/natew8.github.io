@@ -11,36 +11,33 @@ $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 $oceanGreenDim: #61c9a88e;
 .skillsView {
-  height: 100%;
   width: 100%;
+  margin-bottom: 4rem;
   h1 {
     margin: 0%;
   }
 }
 
-.container {
-  border: 1px solid $black-color;
-  margin: 0rem;
-  margin-bottom: 1rem;
-  box-shadow: 2px 4px 5px $black-colorLighter;
-}
 .topBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 6rem 0rem;
 }
 .skillBox {
-  width: 8%;
+  background-color: $black-color;
+  width: 9%;
   margin: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 20px;
   object {
-    filter: drop-shadow(2px 3px 10px #1b1624);
+    margin: 0rem;
     width: 100%;
   }
-  h3 {
-    font-family: monospace;
+  .title {
     font-size: 1.2rem;
     text-align: center;
-    color: $black-color;
+    color: $nav-color;
     margin: 0px;
   }
 }
@@ -55,59 +52,30 @@ $oceanGreenDim: #61c9a88e;
   border-bottom: 3px solid $bananaDim;
   border-right: 3px solid $bananaDim;
 }
-.otherSkillsContainer {
-  .hardSoftBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .hard {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 50%;
-      margin-right: 0.25rem;
-      padding: 0.25rem 0.25rem 1rem 0.25rem;
-      border: 1px solid $black-color;
-      box-shadow: 2px 4px 5px $black-colorLighter;
-      background-color: $active-color;
 
-      h1 {
-        font-size: 1.5rem;
-        letter-spacing: 10px;
-        color: $nav-color;
-        margin: 0%;
-        text-align: center;
-      }
-      h3 {
-        margin: 0%;
-        font-weight: 500;
-        color: $nav-color;
-        margin: 0rem 0.5rem;
-      }
-    }
-    .soft {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 50%;
-      margin-left: 0.25rem;
-      padding: 0.25rem 0.25rem 1rem 0.25rem;
-      border: 1px solid $black-color;
-      box-shadow: 2px 4px 5px $black-colorLighter;
-      background-color: $hover-color;
-      h1 {
-        color: $nav-color;
-        font-size: 1.5rem;
-        letter-spacing: 10px;
-        margin: 0%;
-        text-align: center;
-      }
-      h3 {
-        margin: 0%;
-        font-weight: 500;
-        color: $nav-color;
-        margin: 0rem 0.5rem;
-      }
-    }
+.skillsFooter {
+  color: $black-color;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1.5rem;
+  h1 {
+    font-size: 1.25rem;
+  }
+  a {
+    width: 20%;
+  }
+  button {
+    margin-top: 0.6rem;
+    font-size: 1.25rem;
+    background-color: $active-color;
+    border: 3px solid $black-color;
+    width: 100%;
+    color: $nav-color;
+    font-weight: 100;
+    font-size: 1.6rem;
+    height: 2.5rem;
+  }
+  button:hover {
+    cursor: pointer;
   }
 }
