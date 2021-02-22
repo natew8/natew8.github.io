@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../components/Layout/Layout";
 import Hero from "../components/Hero/Hero";
 import Skills from "../components/Portfolio/Skills/Skills";
@@ -8,9 +8,6 @@ import About from "../components/About/About";
 import homeStyles from "./pageStyles/home.module.scss";
 
 export default function Home() {
-  const [done, setDone] = useState(false);
-  setTimeout(() => [setDone(true)], 2000);
-
   return (
     <>
       <Layout>

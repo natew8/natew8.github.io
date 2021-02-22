@@ -5,6 +5,7 @@ $active-color: #d84936;
 $black-color: #1b1924;
 .about {
   margin-bottom: 3rem;
+  padding: 1.5rem;
 }
 .aboutHead {
   display: flex;
@@ -29,13 +30,13 @@ $black-color: #1b1924;
   margin: 0.6rem 0rem;
   width: 100%;
   .intro {
-    width: 57%;
+    width: 59%;
     font-size: 3rem;
     color: $black-color;
     margin: 0%;
+    margin-bottom: 0.1em;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $black-color;
     .myNameFirst {
       font-size: 4rem;
       color: $active-color;

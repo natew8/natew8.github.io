@@ -26,22 +26,14 @@ function Header(props) {
           </li>
         </ul>
         <h1 onClick={() => scrollTo("#top")} className={headerStyle.logo}>
-          <AniLink
-            cover
-            direction="down"
-            bg="#1b1924"
-            style={{ textDecoration: "none", color: "#1b1924" }}
-            to="/"
-          >
-            NW
-          </AniLink>
+          NW
         </h1>
         <ul id={headerStyle.listRight}>
-          <li>
-            <a className={headerStyle.link} href="/#projects">
+          <li onClick={() => scrollTo("#projects")}>
+            <h1 className={headerStyle.link}>
               .projects
               <div className={headerStyle.underLine}></div>
-            </a>
+            </h1>
           </li>
           <li>
             <AniLink

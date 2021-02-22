@@ -6,11 +6,6 @@ $black-color: #1b1924;
 $white: #f3f2f1;
 
 .iconContainer {
-  position: fixed;
-  right: 0%;
-  top: 21.7vh;
-  height: fit-content;
-  z-index: 5000;
   div {
     border-radius: 5px;
     background-color: $nav-color;
@@ -28,8 +23,6 @@ $white: #f3f2f1;
     filter: invert(7%) sepia(16%) saturate(1369%) hue-rotate(210deg)
       brightness(97%) contrast(91%);
     margin-bottom: 1rem;
-    border: none;
-    box-shadow: none;
     width: 40px;
     transition: transform ease 0.3s;
   }

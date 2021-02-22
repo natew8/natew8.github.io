@@ -5,13 +5,13 @@ import aboutStyles from "./about.module.scss";
 function About(props) {
   return (
     <div id="about" className={aboutStyles.about}>
-      <div className={aboutStyles.quoteBox}>
+      {/* <div className={aboutStyles.quoteBox}>
         <h1>
           “Unless you try to do something beyond what you have already mastered,
           you will never grow.”
           <h5>- Ronald E. Osborn</h5>
         </h1>
-      </div>
+      </div> */}
       <div className={aboutStyles.nameContent}>
         <div className={aboutStyles.pA}>
           <img
@@ -20,7 +20,7 @@ function About(props) {
             alt="my face"
           />
           <h1 className={aboutStyles.intro}>
-            Hey, Im <h1 className={aboutStyles.myNameFirst}>Nate</h1>,
+            Hey, I'm <h1 className={aboutStyles.myNameFirst}>Nate</h1>,
             <Titles />
           </h1>
           For as long as I can remember I've had a passion for Creating.
@@ -30,8 +30,8 @@ function About(props) {
           <br></br> When I'm not making sweet stuff with code, I'm usually
           working on my next music adventure. I've been producing music since
           2016 and have worked on dozens of musical projects as a singer,
-          songwriter, guitar player, and music producer. I most recently
-          finished executive producing{" "}
+          songwriter, guitar player, and music producer. Most recently i had the
+          opportunity to executive produce{" "}
           <a
             style={{ textDecoration: "none" }}
             target="_blank"
