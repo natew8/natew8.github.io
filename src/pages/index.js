@@ -12,17 +12,26 @@ export default function Home() {
     <>
       <Layout>
         <Hero />
-        <h1 id="about" className={homeStyles.sectionTitle}>
-          Introductions
-        </h1>
+        <div className={homeStyles.titlesBox}>
+          <h1 id="about" className={homeStyles.sectionTitle}>
+            Introductions
+          </h1>
+          <div></div>
+        </div>
         <About />
-        <h1 id="skills" className={homeStyles.sectionTitle}>
-          Things I Know
-        </h1>
+        <div className={homeStyles.titlesBox}>
+          <h1 id="skills" className={homeStyles.sectionTitle}>
+            Things I Know
+          </h1>
+          <div></div>
+        </div>
         <Skills />
-        <h1 id="projects" className={homeStyles.sectionTitle}>
-          Things I've built
-        </h1>
+        <div className={homeStyles.titlesBox}>
+          <h1 id="projects" className={homeStyles.sectionTitle}>
+            Things I've built
+          </h1>
+          <div></div>
+        </div>
         <Projects />
         <Contact />
       </Layout>
