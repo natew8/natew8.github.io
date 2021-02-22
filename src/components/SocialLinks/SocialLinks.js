@@ -1,9 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import socialStyles from "./social.module.scss";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 
 function SocialLinks(props) {
+  const images = useStaticQuery(graphql`
+    query linkQuery {
+      allFile {
+        nodes {
+          publicURL
+        }
+      }
+    }
+  `);
+  const { nodes } = images.allFile;
+
   return (
     <motion.span
       className={socialStyles.iconContainer}
@@ -16,7 +27,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.github}
             className={socialStyles.icon}
-            src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/github.svg"
+            src={nodes[8].publicURL}
             alt="github"
           />
         </a>
@@ -28,7 +39,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.linked}
             className={socialStyles.icon}
-            src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/linkedin.svg"
+            src={nodes[14].publicURL}
             alt="linkedIn"
           />
         </a>
@@ -36,7 +47,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.email}
             className={socialStyles.icon}
-            src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/gmail.svg"
+            src={nodes[9].publicURL}
             alt="Email"
           />
         </Link>
@@ -48,7 +59,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.ig}
             className={socialStyles.icon}
-            src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/instagram.svg"
+            src={nodes[13].publicURL}
             alt="IG"
           />
         </a>
@@ -60,7 +71,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.spotify}
             className={socialStyles.icon}
-            src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/spotify.svg"
+            src={nodes[22].publicURL}
             alt="Spotify"
           />
         </a>
@@ -72,7 +83,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.apple}
             className={socialStyles.icon}
-            src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/applemusic.svg"
+            src={nodes[0].publicURL}
             alt="AppleMusic"
           />
         </a>
@@ -84,7 +95,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.youtube}
             className={socialStyles.icon}
-            src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/youtube.svg"
+            src={nodes[23].publicURL}
             alt="youtube"
           />
         </a>
