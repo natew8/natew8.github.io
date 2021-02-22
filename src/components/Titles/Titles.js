@@ -4,10 +4,10 @@ import titleStyles from "./titles.module.scss";
 const titles = [
   { title: "husband" },
   { title: "father" },
+  { title: "web developer" },
   { title: "singer" },
   { title: "songwriter" },
   { title: "producer" },
-  { title: "web developer" },
 ];
 function Titles(props) {
   const [count, setCount] = useState(0);
