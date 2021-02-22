@@ -6,34 +6,30 @@ import aboutStyles from "./about.module.scss";
 import Img from "gatsby-image";
 function About(props) {
   const data = useStaticQuery(graphql`
-    query Photos {
-      allFile {
-        nodes {
-          childImageSharp {
-            fixed {
-              ...GatsbyImageSharpFixed
-            }
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-            id
+    query Photo {
+      file(relativePath: { eq: "Photos/natewaite.jpg" }) {
+        childImageSharp {
+          id
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `);
-  const { nodes } = data.allFile;
-  console.log(nodes);
-  const mappedPhotos = nodes
-    .slice(24)
-    .map((photo) => (
-      <Img className={aboutStyles.photo} key={photo.childImageSharp.id}></Img>
-    ));
+  const { childImageSharp } = data.file;
+
+  console.log(childImageSharp);
 
   return (
     <div id="about" className={aboutStyles.about}>
       <div className={aboutStyles.nameContent}>
-        {mappedPhotos}
+        <div className={aboutStyles.photoBox}>
+          <Img className={aboutStyles.photo} fixed={childImageSharp.fixed} />
+        </div>
         {/* <img
           className={aboutStyles.imageOne}
           src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/natewaite.jpg"

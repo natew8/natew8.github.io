@@ -28,6 +28,10 @@ $black-color: #1b1924;
 .nameContent {
   display: flex;
   width: 100%;
+  .line {
+    border: 1px solid $black-color;
+    margin: 0rem 1rem;
+  }
   .intro {
     width: 81%;
     font-size: 2em;
@@ -52,22 +56,26 @@ $black-color: #1b1924;
     line-height: 35px;
     flex-grow: 1;
     margin: 0%;
+    margin-bottom: 1em;
     font-size: 1.1em;
     vertical-align: middle;
   }
+  .photoBox {
+    display: flex;
+    align-items: center;
+  }
+  .photo {
+    padding: 0px;
+    margin: 0px;
+  }
 }
-.photo:hover {
-  width: 100px;
-}
+
 .imageOne {
   border: 3px solid $black-color;
   width: 50%;
   margin: 0%;
 }
-.line {
-  border: 1px solid $black-color;
-  margin: 0rem 1rem;
-}
+
 .pA {
   display: flex;
   flex-direction: column;

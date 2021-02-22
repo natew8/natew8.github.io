@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "nate-waite",
     description:
-      "Nate Waite - Full Stack Web Developer living in Provo, Ut. React | Node | PostgreSQL. Offering creative and reliable solutions to all of your web development requirements.",
+      "Nate Waite - Full Stack Web Developer living in Provo, Ut. React | Node | PostgreSQL - Checkout my recent projects and Lets connect!",
   },
   plugins: [
     "gatsby-plugin-sass",
