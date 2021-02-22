@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import headerStyle from "./header.module.scss";
 import Menu from "./Menu";
 
@@ -9,7 +9,7 @@ function Header(props) {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className={headerStyle.header}>
+    <header id="header" className={headerStyle.header}>
       <nav className={headerStyle.nav}>
         <ul id={headerStyle.listLeft}>
           <li onClick={() => scrollTo("#about")}>
