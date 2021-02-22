@@ -7,7 +7,7 @@ import Img from "gatsby-image";
 function About(props) {
   const data = useStaticQuery(graphql`
     query Photo {
-      file(relativePath: { eq: "Photos/natewaite.jpg" }) {
+      file(relativePath: { eq: "Photos/natewaite3.jpg" }) {
         childImageSharp {
           id
           fixed {

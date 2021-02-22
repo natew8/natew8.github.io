@@ -106,5 +106,11 @@ $black-color: #1b1924;
     color: $nav-color;
     font-size: 1.6rem;
     height: 2.5rem;
+    transition: all ease 0.3s;
+  }
+  .contact:hover {
+    cursor: pointer;
+    background-color: $nav-color;
+    color: $black-color;
   }
 }
