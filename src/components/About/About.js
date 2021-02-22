@@ -5,13 +5,6 @@ import aboutStyles from "./about.module.scss";
 function About(props) {
   return (
     <div id="about" className={aboutStyles.about}>
-      {/* <div className={aboutStyles.quoteBox}>
-        <h1>
-          “Unless you try to do something beyond what you have already mastered,
-          you will never grow.”
-          <h5>- Ronald E. Osborn</h5>
-        </h1>
-      </div> */}
       <div className={aboutStyles.nameContent}>
         <img
           className={aboutStyles.imageOne}
@@ -51,9 +44,9 @@ function About(props) {
           </p>
           <div className={aboutStyles.contactBox}>
             <h1>
-              Im always looking for my next challenge - my next opportunity to
-              learn and create.<br></br> If you have that next adventure, I'd
-              love to hear from you.
+              Im always looking for my next opportunity to learn and create.
+              <br></br> If you have that next adventure, I'd love to hear from
+              you.
             </h1>
             <button
               className={aboutStyles.contact}

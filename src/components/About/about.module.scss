@@ -4,7 +4,9 @@ $hover-color: #1c5c77;
 $active-color: #d84936;
 $black-color: #1b1924;
 .about {
-  margin-bottom: 3rem;
+  height: 87.7vh;
+  display: flex;
+  flex-direction: column;
 }
 .aboutHead {
   display: flex;
@@ -13,11 +15,9 @@ $black-color: #1b1924;
   width: 100%;
   margin: 0%;
   padding: 1rem 0.6rem;
-  color: $nav-color;
-  background-color: $black-color;
-  border: 1px solid $black-color;
+  color: $black-color;
   h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0rem;
     h5 {
       margin: 0rem;
@@ -35,6 +35,7 @@ $black-color: #1b1924;
     margin: 0%;
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
     .myNameFirst {
       font-size: 1.25em;
       color: $active-color;
@@ -48,7 +49,7 @@ $black-color: #1b1924;
     color: $hover-color;
   }
   p {
-    padding-top: 0.6em;
+    line-height: 35px;
     flex-grow: 1;
     margin: 0%;
     font-size: 1.1em;
@@ -56,6 +57,7 @@ $black-color: #1b1924;
   }
 }
 .imageOne {
+  border: 3px solid $black-color;
   width: 50%;
   margin: 0%;
 }
@@ -68,6 +70,9 @@ $black-color: #1b1924;
   flex-direction: column;
   justify-content: space-evenly;
   color: $black-color;
+  h1 {
+    margin: 0%;
+  }
 }
 
 .contactBox {
