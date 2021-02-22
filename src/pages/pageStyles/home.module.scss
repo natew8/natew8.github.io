@@ -7,8 +7,10 @@ $black-color: #1b1924;
 $lighter-black: #46444d;
 $white: #f3f2f1;
 .titlesBox {
+  border-radius: 10px;
   display: flex;
   align-items: center;
+  margin: 1rem 0rem;
   .sectionTitle {
     font-family: sans-serif;
     color: $black-color;
@@ -20,6 +22,6 @@ $white: #f3f2f1;
     flex-grow: 1;
     margin-left: 5px;
     height: 0%;
-    border: 1px solid $black-color;
+    border: 3px solid $black-color;
   }
 }
