@@ -1,16 +1,44 @@
+import { graphql, useStaticQuery } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import React from "react";
 import Titles from "../Titles/Titles";
 import aboutStyles from "./about.module.scss";
+import Img from "gatsby-image";
 function About(props) {
+  const data = useStaticQuery(graphql`
+    query Photos {
+      allFile {
+        nodes {
+          childImageSharp {
+            fixed {
+              ...GatsbyImageSharpFixed
+            }
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+            id
+          }
+        }
+      }
+    }
+  `);
+  const { nodes } = data.allFile;
+  console.log(nodes);
+  const mappedPhotos = nodes
+    .slice(24)
+    .map((photo) => (
+      <Img className={aboutStyles.photo} key={photo.childImageSharp.id}></Img>
+    ));
+
   return (
     <div id="about" className={aboutStyles.about}>
       <div className={aboutStyles.nameContent}>
-        <img
+        {mappedPhotos}
+        {/* <img
           className={aboutStyles.imageOne}
           src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/natewaite.jpg"
           alt="my face"
-        />
+        /> */}
         <div className={aboutStyles.line}></div>
         <div className={aboutStyles.pA}>
           <h1 className={aboutStyles.intro}>

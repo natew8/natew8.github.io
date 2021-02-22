@@ -161,7 +161,7 @@ function Skills(props) {
     }
   `);
   const { nodes } = images.allFile;
-  console.log(nodes);
+
   const mySkills = [
     {
       id: 1,
