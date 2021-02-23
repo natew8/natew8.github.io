@@ -23,7 +23,7 @@ $white: #f3f2f1;
   width: fit-content;
 }
 .menuIcon {
-  height: 60px;
+  height: 80px;
   position: relative;
   margin: 0%;
   filter: invert(86%) sepia(6%) saturate(490%) hue-rotate(14deg)
@@ -64,4 +64,32 @@ $white: #f3f2f1;
   filter: invert(10%) sepia(77%) saturate(6194%) hue-rotate(358deg)
     brightness(114%) contrast(129%);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 890px) {
+  .menuIcon {
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .menuIcon {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .menuA {
+    margin: 0.25rem;
+  }
+  .menuIcon {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .menuA {
+    margin: 0.25rem;
+  }
+  .menuIcon {
+    width: 40px;
+  }
 }
