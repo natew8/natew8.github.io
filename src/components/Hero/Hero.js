@@ -38,11 +38,10 @@ function Hero(props) {
             Full Stack Web Developer /<br></br> Music Producer
           </h1>
           <hr></hr>
-          <h3>
-            Passionately working to provide creative and reliable solutions to
-            complex roadblocks that will engage and inspire.
-            <br></br>I also make sick beats.
-          </h3>
+          <h2>
+            Passionately working to provide creative and reliable web solutions
+            that will engage and inspire.
+          </h2>
           <h4>* Pardon our dust. Site Currently under construction.</h4>
         </div>
       </motion.div>

@@ -4,7 +4,7 @@ import Layout from "../components/Layout/Layout";
 function music(props) {
   return (
     <Layout>
-      <div>Music</div>
+      <div>Music page coming soon..</div>
     </Layout>
   );
 }
