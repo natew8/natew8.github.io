@@ -166,7 +166,7 @@ function Skills(props) {
     {
       id: 1,
       name: "Javascript",
-      icon: nodes[12].publicURL,
+      icon: nodes[14].publicURL,
       color:
         "invert(85%) sepia(92%) saturate(5503%) hue-rotate(339deg) brightness(101%) contrast(94%)",
     },
@@ -180,7 +180,7 @@ function Skills(props) {
     {
       id: 3,
       name: "CSS3",
-      icon: nodes[1].publicURL,
+      icon: nodes[3].publicURL,
       color:
         "invert(30%) sepia(53%) saturate(4114%) hue-rotate(189deg) brightness(86%) contrast(83%)",
     },
@@ -188,14 +188,14 @@ function Skills(props) {
     {
       id: 4,
       name: "ReactJS",
-      icon: nodes[19].publicURL,
+      icon: nodes[16].publicURL,
       color:
         "invert(84%) sepia(9%) saturate(5802%) hue-rotate(164deg) brightness(103%) contrast(97%)",
     },
     {
       id: 5,
       name: "Gatsby",
-      icon: nodes[6].publicURL,
+      icon: nodes[5].publicURL,
       color:
         "invert(21%) sepia(20%) saturate(7282%) hue-rotate(256deg) brightness(89%) contrast(87%)",
     },
@@ -209,42 +209,42 @@ function Skills(props) {
     {
       id: 11,
       name: "Express",
-      icon: nodes[2].publicURL,
+      icon: nodes[0].publicURL,
       color:
         "invert(100%) sepia(100%) saturate(2%) hue-rotate(284deg) brightness(109%) contrast(101%)",
     },
     {
       id: 12,
       name: "PostgreSQL",
-      icon: nodes[16].publicURL,
+      icon: nodes[18].publicURL,
       color:
         "invert(35%) sepia(16%) saturate(1807%) hue-rotate(165deg) brightness(96%) contrast(87%)",
     },
     {
       id: 7,
       name: "Sass",
-      icon: nodes[21].publicURL,
+      icon: nodes[19].publicURL,
       color:
         "invert(68%) sepia(24%) saturate(1937%) hue-rotate(291deg) brightness(83%) contrast(90%)",
     },
     {
       id: 13,
       name: "Postman",
-      icon: nodes[17].publicURL,
+      icon: nodes[23].publicURL,
       color:
         "invert(61%) sepia(48%) saturate(5075%) hue-rotate(337deg) brightness(105%) contrast(105%)",
     },
     {
       id: 14,
       name: "Git",
-      icon: nodes[5].publicURL,
+      icon: nodes[6].publicURL,
       color:
         "invert(42%) sepia(51%) saturate(4130%) hue-rotate(343deg) brightness(98%) contrast(92%)",
     },
     {
       id: 15,
       name: "Github",
-      icon: nodes[8].publicURL,
+      icon: nodes[7].publicURL,
       color:
         "invert(33%) sepia(17%) saturate(5651%) hue-rotate(239deg) brightness(85%) contrast(94%)",
     },
@@ -258,7 +258,7 @@ function Skills(props) {
     {
       id: 19,
       name: "Figma",
-      icon: nodes[3].publicURL,
+      icon: nodes[4].publicURL,
       color:
         "invert(57%) sepia(73%) saturate(6457%) hue-rotate(351deg) brightness(98%) contrast(93%)",
     },
@@ -272,7 +272,7 @@ function Skills(props) {
     {
       id: 8,
       name: "React Router",
-      icon: nodes[18].publicURL,
+      icon: nodes[17].publicURL,
       color:
         "invert(32%) sepia(35%) saturate(1520%) hue-rotate(315deg) brightness(105%) contrast(100%",
     },

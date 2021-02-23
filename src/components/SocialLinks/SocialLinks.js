@@ -14,6 +14,7 @@ function SocialLinks(props) {
     }
   `);
   const { nodes } = images.allFile;
+  console.log(nodes);
 
   return (
     <motion.span
@@ -27,7 +28,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.github}
             className={socialStyles.icon}
-            src={nodes[8].publicURL}
+            src={nodes[7].publicURL}
             alt="github"
           />
         </a>
@@ -39,7 +40,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.linked}
             className={socialStyles.icon}
-            src={nodes[14].publicURL}
+            src={nodes[13].publicURL}
             alt="linkedIn"
           />
         </a>
@@ -47,7 +48,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.email}
             className={socialStyles.icon}
-            src={nodes[9].publicURL}
+            src={nodes[8].publicURL}
             alt="Email"
           />
         </Link>
@@ -59,7 +60,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.ig}
             className={socialStyles.icon}
-            src={nodes[13].publicURL}
+            src={nodes[12].publicURL}
             alt="IG"
           />
         </a>
@@ -71,7 +72,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.spotify}
             className={socialStyles.icon}
-            src={nodes[22].publicURL}
+            src={nodes[21].publicURL}
             alt="Spotify"
           />
         </a>
@@ -83,7 +84,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.apple}
             className={socialStyles.icon}
-            src={nodes[0].publicURL}
+            src={nodes[2].publicURL}
             alt="AppleMusic"
           />
         </a>
@@ -95,7 +96,7 @@ function SocialLinks(props) {
           <img
             id={socialStyles.youtube}
             className={socialStyles.icon}
-            src={nodes[23].publicURL}
+            src={nodes[22].publicURL}
             alt="youtube"
           />
         </a>
