@@ -51,9 +51,7 @@ function Projects(props) {
     );
   });
   return (
-    <div>
-      <h1 className={projectStyles.projectsHeader}>Projects</h1>
-      <div className={projectStyles.arrow}></div>
+    <div className={projectStyles.projectView}>
       <div className={projectStyles.projects}>{mappedProjects}</div>
     </div>
   );
