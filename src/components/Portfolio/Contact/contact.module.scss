@@ -1,43 +1,98 @@
 $nav-color: #dcd9c6;
-$hover-color: #556f7a;
-$active-color: #c97064;
+$hover-color: #1c5c77;
+// $active-color: #c97064;
+$active-color: #d84936;
 $black-color: #1b1924;
-$black-colorLighter: #535355;
-//Folio Colors
-$bright-orange: #ffd166;
-$banana: #f7e3af;
-$bananaDim: #f7e3af2f;
-$oceanGreen: #61c9a8;
-$oceanGreenDim: #61c9a88e;
-.container {
-  border: 1px solid $bananaDim;
-  position: relative;
-  padding: 4rem;
+$white: #f3f2f1;
+.contactView {
+  padding: 2rem;
+  display: flex;
+  // align-items: center;
+  justify-content: space-evenly;
+}
+.formContainer {
   h1 {
-    color: $oceanGreen;
-    font-weight: 200;
-    width: fit-content;
-    margin: 0% auto;
-    margin-bottom: 1rem;
+    // padding: 0px 0.6rem;
+    margin: 0%;
+    color: $active-color;
+    font-size: 4rem;
   }
-  .link {
-    width: fit-content;
-    margin: 0% auto;
-    .button {
-      text-align: center;
-      padding: 0.6rem 0.25rem;
-      font-size: 1.25rem;
-      outline: none;
-      width: 10rem;
-      color: $oceanGreen;
-      background-color: transparent;
-      border: 2px solid $oceanGreen;
-      margin: 0% auto;
-      transition: all ease 0.3s;
-    }
-    .button:hover {
-      background-color: $oceanGreen;
-      color: $black-color;
-    }
+  p {
+    color: $black-color;
+    margin: 0%;
+    padding: 0px 0.6rem;
+    font-family: sans-serif;
   }
+}
+.form {
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+}
+.formGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  input {
+    font-weight: 100;
+    flex-grow: 1;
+    width: 15rem;
+    height: 3rem;
+    color: $black-color;
+    margin: 0.3rem;
+    outline: none;
+    border: 3px solid transparent;
+  }
+  input:focus {
+    border-bottom: 3px solid $active-color;
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  font-weight: 100;
+  border: 3px solid transparent;
+  margin: 0.3rem;
+  height: 10rem;
+  width: 100%;
+  outline: none;
+  resize: none;
+}
+textarea:focus {
+  border-bottom: 3px solid $active-color;
+}
+.buttonBox {
+  padding: 0.6rem;
+  margin: 0.3rem;
+  background-color: $black-color;
+}
+.submitButton {
+  background-color: transparent;
+  color: $nav-color;
+  font-weight: 800;
+  width: 10rem;
+  height: 2.25rem;
+  outline: none;
+  border: 3px solid $nav-color;
+  transition: all ease 0.3s;
+  margin: 0% auto;
+}
+.submitButton:hover {
+  cursor: pointer;
+  color: $black-color;
+  background: $nav-color;
+}
+form {
+  p {
+    color: #c97064;
+  }
+}
+.line {
+  width: 0%;
+  border: 1px solid $black-color;
+}
+.photo {
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 5px solid $hover-color;
 }

@@ -3,9 +3,9 @@ import Layout from "../components/Layout/Layout";
 import Hero from "../components/Hero/Hero";
 import Skills from "../components/Portfolio/Skills/Skills";
 import Projects from "../components/Portfolio/Projects/Projects";
-import Contact from "../components/Portfolio/Contact/Contact";
 import About from "../components/About/About";
 import homeStyles from "./pageStyles/home.module.scss";
+import MyForm from "../components/Portfolio/Contact/Contact";
 
 export default function Home() {
   return (
@@ -33,7 +33,13 @@ export default function Home() {
           <div></div>
         </div>
         <Projects />
-        <Contact />
+        <div className={homeStyles.titlesBox}>
+          <h1 id="contact" className={homeStyles.sectionTitle}>
+            Lets Connect!
+          </h1>
+          <div></div>
+        </div>
+        <MyForm />
       </Layout>
     </>
   );
