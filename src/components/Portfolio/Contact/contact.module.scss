@@ -5,23 +5,31 @@ $active-color: #d84936;
 $black-color: #1b1924;
 $white: #f3f2f1;
 .contactView {
-  padding: 2rem;
   display: flex;
-  // align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 5rem;
 }
 .formContainer {
   h1 {
     // padding: 0px 0.6rem;
     margin: 0%;
     color: $active-color;
-    font-size: 4rem;
+    font-size: 3rem;
+    padding: 0rem 0.2rem;
   }
-  p {
+  h2 {
+    color: $hover-color;
+    font-size: 1.2em;
+    margin: 0%;
+    margin-bottom: 0.5rem;
+    padding: 0rem 0.3rem;
+  }
+  h3 {
+    padding: 0rem 0.3rem;
     color: $black-color;
     margin: 0%;
-    padding: 0px 0.6rem;
-    font-family: sans-serif;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
   }
 }
 .form {

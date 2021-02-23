@@ -59,15 +59,16 @@ const MyForm = () => {
     <div className={contactStyle.contactView}>
       <div className={contactStyle.formContainer}>
         <h1>Contact Me</h1>
-        <p>
+        <h2>
           Im interested in any opportunities, big or small, in the music or web
           development field.
           <br></br>
           The more creative and ambitious the better.
-          <br></br>
+        </h2>
+        <h3>
           If you have any questions, comments, or just want to say 'Hey', please
           don't hesitate to reach out.
-        </p>
+        </h3>
         <form
           className={contactStyle.form}
           action="https://getform.io/f/383bfd94-a853-46a9-b8d0-d05f6efc5522"

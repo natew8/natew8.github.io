@@ -6,6 +6,7 @@ import Projects from "../components/Portfolio/Projects/Projects";
 import About from "../components/About/About";
 import homeStyles from "./pageStyles/home.module.scss";
 import MyForm from "../components/Portfolio/Contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
           <div></div>
         </div>
         <MyForm />
+        <Footer />
       </Layout>
     </>
   );

@@ -3,7 +3,7 @@ import footerStyle from "./footer.module.scss";
 
 function Footer(props) {
   return (
-    <div>
+    <div className={footerStyle.footer}>
       <p className={footerStyle.p}>Created By Nate Waite ® 2021</p>
     </div>
   );
