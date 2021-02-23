@@ -30,11 +30,7 @@ function About(props) {
         <div className={aboutStyles.photoBox}>
           <Img className={aboutStyles.photo} fixed={childImageSharp.fixed} />
         </div>
-        {/* <img
-          className={aboutStyles.imageOne}
-          src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/natewaite.jpg"
-          alt="my face"
-        /> */}
+
         <div className={aboutStyles.line}></div>
         <div className={aboutStyles.pA}>
           <h1 className={aboutStyles.intro}>

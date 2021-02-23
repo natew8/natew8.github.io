@@ -248,20 +248,20 @@ function Skills(props) {
       color:
         "invert(33%) sepia(17%) saturate(5651%) hue-rotate(239deg) brightness(85%) contrast(94%)",
     },
-    {
-      id: 18,
-      name: "Heroku",
-      icon: nodes[10].publicURL,
-      color:
-        "invert(15%) sepia(52%) saturate(5180%) hue-rotate(265deg) brightness(78%) contrast(140%)",
-    },
-    {
-      id: 19,
-      name: "Figma",
-      icon: nodes[4].publicURL,
-      color:
-        "invert(57%) sepia(73%) saturate(6457%) hue-rotate(351deg) brightness(98%) contrast(93%)",
-    },
+    // {
+    //   id: 18,
+    //   name: "Heroku",
+    //   icon: nodes[10].publicURL,
+    //   color:
+    //     "invert(15%) sepia(52%) saturate(5180%) hue-rotate(265deg) brightness(78%) contrast(140%)",
+    // },
+    // {
+    //   id: 19,
+    //   name: "Figma",
+    //   icon: nodes[4].publicURL,
+    //   color:
+    //     "invert(57%) sepia(73%) saturate(6457%) hue-rotate(351deg) brightness(98%) contrast(93%)",
+    // },
     {
       id: 6,
       name: "Redux",
@@ -290,18 +290,18 @@ function Skills(props) {
       </div>
     );
   });
-  const mappedHardSkills = hardArr.map((skill) => {
-    return <h3>{skill}</h3>;
-  });
+  // const mappedHardSkills = hardArr.map((skill) => {
+  //   return <h3>{skill}</h3>;
+  // });
 
-  const mappedSoftSkills = softArr.map((skill) => {
-    return <h3>{skill}</h3>;
-  });
+  // const mappedSoftSkills = softArr.map((skill) => {
+  //   return <h3>{skill}</h3>;
+  // });
 
   return (
     <div name="skills" id="skills" className={skillStyles.skillsView}>
-      <span className={skillStyles.topBox}>{mappedClientSkills}</span>
-      <div className={skillStyles.skillsFooter}>
+      <span className={skillStyles.leftBox}>{mappedClientSkills}</span>
+      <div className={skillStyles.rightBox}>
         <h1>And more...</h1>
         <a
           target="_blank"
