@@ -11,7 +11,7 @@ function Header(props) {
   return (
     <header id="header" className={headerStyle.header}>
       <nav className={headerStyle.nav}>
-        <ul id={headerStyle.listLeft}>
+        <div id={headerStyle.listLeft}>
           <li onClick={() => scrollTo("#about")}>
             <h1 className={headerStyle.link}>
               .about
@@ -24,11 +24,11 @@ function Header(props) {
               <div className={headerStyle.underLine}></div>
             </h1>
           </li>
-        </ul>
+        </div>
         <h1 onClick={() => scrollTo("#top")} className={headerStyle.logo}>
           NW
         </h1>
-        <ul id={headerStyle.listRight}>
+        <div id={headerStyle.listRight}>
           <li onClick={() => scrollTo("#projects")}>
             <h1 className={headerStyle.link}>
               .projects
@@ -41,7 +41,7 @@ function Header(props) {
               <div className={headerStyle.underLine}></div>
             </h1>
           </li>
-        </ul>
+        </div>
 
         <div className={headerStyle.menuContainer}>
           <Menu menu={menu} closeMenu={setMenu} />
