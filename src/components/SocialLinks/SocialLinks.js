@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import socialStyles from "./social.module.scss";
+import scrollTo from "gatsby-plugin-smoothscroll";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
 function SocialLinks(props) {
@@ -43,14 +44,13 @@ function SocialLinks(props) {
             alt="linkedIn"
           />
         </a>
-        <Link to="/contact">
-          <img
-            id={socialStyles.email}
-            className={socialStyles.icon}
-            src={nodes[8].publicURL}
-            alt="Email"
-          />
-        </Link>
+        <img
+          onClick={() => scrollTo("#contact")}
+          id={socialStyles.email}
+          className={socialStyles.icon}
+          src={nodes[8].publicURL}
+          alt="Email"
+        />
         <a
           target="_blank"
           rel="noreferrer"
