@@ -10,19 +10,21 @@ $white: #f3f2f1;
   position: relative;
   margin: 0% auto;
   height: fit-content;
-  padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   border: 1px solid $nav-color;
 }
 
 .menuA {
-  position: relative;
+  margin: 0.6rem;
+  padding: 0%;
   height: fit-content;
+  width: fit-content;
 }
 .menuIcon {
+  height: 60px;
   position: relative;
-  height: 30px;
   margin: 0%;
   filter: invert(86%) sepia(6%) saturate(490%) hue-rotate(14deg)
     brightness(102%) contrast(89%);

@@ -17,23 +17,18 @@ function Menu(props) {
       <div>
         <h1 onClick={() => scrollTo("#about")} className={menuStyles.link}>
           .about
-          <div className={menuStyles.line}></div>
         </h1>
         <h1 onClick={() => scrollTo("#skills")} className={menuStyles.link}>
           .skills
-          <div className={menuStyles.line}></div>
         </h1>
         <h1 onClick={() => scrollTo("#projects")} className={menuStyles.link}>
           .projects
-          <div className={menuStyles.line}></div>
         </h1>
         <h1 onClick={() => scrollTo("#contact")} className={menuStyles.link}>
           .contact
-          <div className={menuStyles.line}></div>
         </h1>
         <h1 onClick={() => scrollTo("#top")} className={menuStyles.link}>
           home
-          <div className={menuStyles.line}></div>
         </h1>
       </div>
       <MenuSocial />
