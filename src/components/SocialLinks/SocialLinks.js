@@ -14,7 +14,6 @@ function SocialLinks(props) {
     }
   `);
   const { nodes } = images.allFile;
-  console.log(nodes);
 
   return (
     <motion.span

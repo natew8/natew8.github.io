@@ -1,6 +1,7 @@
 $nav-color: #dcd9c6;
-$hover-color: #556f7a;
-$active-color: #c97064;
+$hover-color: #1c5c77;
+// $active-color: #c97064;
+$active-color: #d84936;
 $black-color: #1b1924;
 $black-colorLighter: #535355;
 //Folio Colors
@@ -10,36 +11,21 @@ $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 $oceanGreenDim: #61c9a88e;
 
-.projectsHeader {
-  text-align: center;
-  padding: 01rem 0rem;
-  border: 1px solid $bananaDim;
-  font-weight: 500;
-  color: $oceanGreen;
-  width: 100%;
-  margin-top: 1rem;
+.projectView {
+  display: flex;
 }
 
-.arrow {
-  background-color: $black-color;
-  transform: rotate(45deg);
-  width: 20px;
-  height: 20px;
-  margin: 0%auto;
-  margin-top: -35px;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid $bananaDim;
-  border-right: 3px solid $bananaDim;
-}
 .projectContainer {
-  padding: 0.6rem;
-  border: 1px solid $bananaDim;
+  border: 2px solid $black-color;
   display: flex;
-  margin-bottom: 1rem;
-  img {
-    margin: 0%;
-    width: 50%;
-  }
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.6rem;
+  margin: 1rem 0rem;
+}
+
+.photo {
+  filter: drop-shadow(1px 5px 2px $black-colorLighter);
 }
 .infoBox {
   display: flex;
@@ -48,21 +34,25 @@ $oceanGreenDim: #61c9a88e;
   width: 50%;
   padding: 0rem 0.6rem;
   h1 {
-    font-weight: 200;
     padding-left: 0.5rem;
     margin: 0%;
-    border-left: 2px solid $bright-orange;
-    color: $bright-orange;
+    border-left: 4px solid $black-color;
+    color: $hover-color;
+    margin-bottom: 0.6rem;
   }
   p {
     color: $black-color;
     font-size: 1.25rem;
   }
   .techUsed {
+    color: $active-color;
     font-size: 1rem;
+    padding: 0.6rem 0rem;
     text-align: center;
   }
   span {
+    background-color: $black-color;
+    padding: 1rem 0.6rem;
     display: flex;
     justify-content: center;
     a {
@@ -70,9 +60,9 @@ $oceanGreenDim: #61c9a88e;
       button {
         font-size: 1.25rem;
         text-transform: lowercase;
-        color: $bright-orange;
+        color: $nav-color;
         outline: none;
-        border: 2px solid $bright-orange;
+        border: 2px solid $nav-color;
         border-radius: 0%;
         background-color: transparent;
         width: 10rem;
@@ -82,12 +72,16 @@ $oceanGreenDim: #61c9a88e;
       button:hover {
         cursor: pointer;
         color: $black-color;
-        background-color: $bright-orange;
+        background-color: $nav-color;
       }
     }
   }
   h6 {
     margin: 0%;
-    color: $black-colorLighter;
+    color: $black-color;
   }
+}
+.line {
+  width: 0%;
+  border: 1px solid $black-color;
 }

@@ -22,8 +22,6 @@ function About(props) {
   `);
   const { childImageSharp } = data.file;
 
-  console.log(childImageSharp);
-
   return (
     <div id="about" className={aboutStyles.about}>
       <div className={aboutStyles.nameContent}>
