@@ -43,6 +43,43 @@ $oceanGreen: #61c9a8;
     stroke-dashoffset: 0;
   }
 }
+
+@media only screen and (max-width: 1440px) {
+  .svg {
+    transform: rotate(-90deg) translateX(-10px) translateY(50px);
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .svg {
+    transform: rotate(-90deg) translateX(-10px) translateY(46px);
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .svg {
+    transform: rotate(-90deg) translateX(-10px) translateY(42px);
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .svg {
+    transform: rotate(-90deg) translateX(-10px) translateY(36px);
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .svg {
+    transform: rotate(-90deg) translateX(-10px) translateY(31px);
+  }
+}
+@media only screen and (max-width: 950px) {
+  .svg {
+    transform: rotate(-90deg) translateX(-10px) translateY(27px);
+  }
+}
+@media only screen and (max-width: 850px) {
+  .svg {
+    transform: rotate(-90deg) translateX(-10px) translateY(21px);
+  }
+}
+
 // @media (max-width: 1740px) {
 //   .svg {
 //     width: 751px;

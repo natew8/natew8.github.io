@@ -42,7 +42,6 @@ function Hero(props) {
             Passionately working to provide creative and reliable web solutions
             that will engage and inspire.
           </h2>
-          <h4>* Pardon our dust. Site Currently under construction.</h4>
         </div>
       </motion.div>
       <div className={heroStyles.tL}></div>
