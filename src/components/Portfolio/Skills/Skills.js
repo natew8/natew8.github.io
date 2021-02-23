@@ -282,6 +282,7 @@ function Skills(props) {
     return (
       <div className={skillStyles.skillBox} key={skill.id}>
         <object
+          alt="icon"
           style={{ filter: `${skill.color}` }}
           className={skill.name}
           data={skill.icon}
