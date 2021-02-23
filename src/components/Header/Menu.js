@@ -2,6 +2,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import React from "react";
 import menuStyles from "./menu.module.scss";
 import MenuSocial from "../SocialLinks/MenuSocial";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 function Menu(props) {
   const { closeMenu, menu } = props;
@@ -13,85 +14,28 @@ function Menu(props) {
       <h1 onClick={() => closeMenu(!menu)} className={menuStyles.exit}>
         &times;
       </h1>
-      <ul>
-        <h1 className={menuStyles.link}>
-          <AniLink
-            className={menuStyles.link}
-            cover
-            direction="right"
-            bg="#1b1924"
-            to="/portfolio"
-            style={{ textDecoration: "none" }}
-          >
-            .portfolio
-            <div className={menuStyles.line}></div>
-          </AniLink>
-        </h1>
-        {/* <h1 className={menuStyles.link}>
-          <AniLink
-            className={menuStyles.skillsLink}
-            cover
-            direction="right"
-            bg="#1b1924"
-            to="/#skills"
-            style={{ textDecoration: "none" }}
-          >
-            .skills
-            <div className={menuStyles.line}></div>
-          </AniLink>
-        </h1> */}
-        <h1 onClick={() => alert("Coming Soon!")} className={menuStyles.link}>
-          {/* <AniLink
-            className={menuStyles.link}
-            cover
-            direction="right"
-            bg="#1b1924"
-            to="/music"
-            style={{ textDecoration: "none" }}
-          > */}
-          .music
+      <div>
+        <h1 onClick={() => scrollTo("#about")} className={menuStyles.link}>
+          .about
           <div className={menuStyles.line}></div>
-          {/* </AniLink> */}
         </h1>
-        <h1 className={menuStyles.link}>
-          <AniLink
-            className={menuStyles.link}
-            cover
-            direction="right"
-            bg="#1b1924"
-            style={{ textDecoration: "none" }}
-            to="/about"
-          >
-            .about
-            <div className={menuStyles.line}></div>
-          </AniLink>
+        <h1 onClick={() => scrollTo("#skills")} className={menuStyles.link}>
+          .skills
+          <div className={menuStyles.line}></div>
         </h1>
-        <h1 className={menuStyles.link}>
-          <AniLink
-            className={menuStyles.link}
-            cover
-            direction="right"
-            to="/contact"
-            style={{ textDecoration: "none" }}
-          >
-            .contact
-            <div className={menuStyles.line}></div>
-          </AniLink>
+        <h1 onClick={() => scrollTo("#projects")} className={menuStyles.link}>
+          .projects
+          <div className={menuStyles.line}></div>
         </h1>
-        <h1 className={menuStyles.link}>
-          <AniLink
-            className={menuStyles.link}
-            cover
-            direction="down"
-            to="/"
-            bg="#1b1924"
-            style={{ textDecoration: "none" }}
-          >
-            home
-            <div className={menuStyles.line}></div>
-          </AniLink>
+        <h1 onClick={() => scrollTo("#contact")} className={menuStyles.link}>
+          .contact
+          <div className={menuStyles.line}></div>
         </h1>
-      </ul>
+        <h1 onClick={() => scrollTo("#top")} className={menuStyles.link}>
+          home
+          <div className={menuStyles.line}></div>
+        </h1>
+      </div>
       <MenuSocial />
     </div>
   );
