@@ -56,7 +56,7 @@ function Projects(props) {
       primaryImage: edges[0].node.childImageSharp.fixed,
       title: "Colab",
       summary:
-        "My first full-stack web application. Colab provides music production teams with all of the tools necessary to stay organized and productive in a day when working together can be hard. Utilizing Colab, users can create projects, build production teams, share song versions, and stay in constant communication throughout the production process. **To view full application functionality use this login information: Email: guest@email.com Password: hireme . Or feel free to create a new account!",
+        "My first full-stack web application. Colab provides music production teams with all of the tools necessary to stay organized and productive in a day when working together can be hard. Utilizing Colab, users can create projects, build production teams, share song versions, and stay in constant communication throughout the production process. **To view full application functionality use this login information: Email: guest@email.com Password: hireme - Or feel free to create a new account!",
       tech:
         "React | Redux | CSS | Axios | Framer-Motion | Moment.js | Wavesurfer.js | Amazon S3 | NodeJS | Express | PostgreSQL ",
       github: "https://github.com/natew8/colab-app-2.git",
