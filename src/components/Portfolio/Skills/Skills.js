@@ -310,7 +310,7 @@ function Skills(props) {
           href="https://docs.google.com/document/d/1PYtd-zC6tS1CFLWXfxJGD-zNNNW7mYyXOVsuOF_yGZ8/edit?usp=sharing"
           type="button"
         >
-          <button>My Resume</button>
+          My Resume
         </a>
       </div>
     </div>
