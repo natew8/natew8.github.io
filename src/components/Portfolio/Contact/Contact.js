@@ -15,6 +15,9 @@ const MyForm = () => {
               fixed {
                 ...GatsbyImageSharpFixed
               }
+              fluid(quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
@@ -126,7 +129,7 @@ const MyForm = () => {
       <div className={contactStyle.line}></div>
       <Img
         className={contactStyle.photo}
-        fixed={data.allFile.edges[0].node.childImageSharp.fixed}
+        fluid={data.allFile.edges[0].node.childImageSharp.fluid}
       />
     </div>
   );
