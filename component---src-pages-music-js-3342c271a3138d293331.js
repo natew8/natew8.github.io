@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{vBl1:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),c=t.n(a),o=t("yBb5");e.default=function(n){return c.a.createElement(o.a,null,c.a.createElement("div",null,"Music page coming soon.."))}}}]);
+//# sourceMappingURL=component---src-pages-music-js-3342c271a3138d293331.js.map
