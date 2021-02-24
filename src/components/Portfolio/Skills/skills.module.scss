@@ -30,6 +30,8 @@ $oceanGreenDim: #61c9a88e;
   border-left: 2px solid $black-color;
   border-right: 2px solid $black-color;
   border-top: 2px solid $black-color;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   .skillBox {
     background-color: $black-color;
     width: 11%;
@@ -48,7 +50,9 @@ $oceanGreenDim: #61c9a88e;
     }
   }
 }
-
+.leftBox::-webkit-scrollbar {
+  display: none;
+}
 .rightBox {
   background-color: $black-color;
   border: 2px solid $black-color;
@@ -80,13 +84,126 @@ $oceanGreenDim: #61c9a88e;
     color: $black-color;
   }
 }
-.arrow {
-  transform: rotate(45deg);
-  width: 20px;
-  height: 20px;
-  margin: 0%auto;
-  margin-top: -35px;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid $bananaDim;
-  border-right: 3px solid $bananaDim;
+
+@media only screen and (max-width: 1440px) {
+  .leftBox {
+    .skillBox {
+      .title {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .leftBox {
+    .skillBox {
+      .title {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .leftBox {
+    .skillBox {
+      width: 14%;
+    }
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .leftBox {
+    .skillBox {
+      width: 14%;
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .leftBox {
+    .skillBox {
+      width: 15%;
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .skillsView {
+    height: 81vh;
+  }
+  .leftBox {
+    margin: 0% auto;
+    width: 90%;
+    .skillBox {
+      width: 24%;
+    }
+  }
+  .rightBox {
+    margin: 0% auto;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .leftBox {
+    margin: 0% auto;
+    width: 90%;
+    .skillBox {
+      width: 24%;
+      .title {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .rightBox {
+    margin: 0% auto;
+    width: 90%;
+    h1 {
+      display: none;
+    }
+    a {
+      width: 100%;
+      margin: 0%;
+    }
+    button {
+      width: 100%;
+      margin: 0%;
+      font-size: 1.1rem;
+      text-transform: lowercase;
+      height: 2.25rem;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .skillsView {
+    height: 79.75vh;
+    padding: 0%;
+  }
+  .leftBox {
+    flex-grow: 1;
+    padding: 0rem;
+    width: 100%;
+    .skillBox {
+      height: fit-content;
+      margin: 0.6rem;
+      padding: 0.25rem;
+      width: 21%;
+      .title {
+        font-size: 0.65rem;
+      }
+    }
+  }
+  .rightBox {
+    width: 100%;
+    h1 {
+      display: none;
+    }
+    a {
+      width: 100%;
+      margin: 0%;
+    }
+    button {
+      width: 100%;
+      margin: 0%;
+      font-size: 1.1rem;
+      text-transform: lowercase;
+      height: 2.25rem;
+    }
+  }
 }
