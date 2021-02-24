@@ -15,6 +15,7 @@ $black-color: #1b1924;
 }
 
 .content {
+  overflow-x: hidden;
   overflow: auto;
   flex-grow: 1;
   -ms-overflow-style: none;
