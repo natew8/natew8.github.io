@@ -67,7 +67,7 @@ $oceanGreenDim: #61c9a88e;
     margin-top: 0.6rem;
     width: fit-content;
   }
-  button {
+  .button {
     outline: none;
     background-color: transparent;
     border: 3px solid $nav-color;
@@ -78,7 +78,7 @@ $oceanGreenDim: #61c9a88e;
     height: 2.5rem;
     transition: all ease 0.3s;
   }
-  button:hover {
+  .button:hover {
     cursor: pointer;
     background-color: $nav-color;
     color: $black-color;
@@ -161,7 +161,7 @@ $oceanGreenDim: #61c9a88e;
       width: 100%;
       margin: 0%;
     }
-    button {
+    .button {
       width: 100%;
       margin: 0%;
       font-size: 1.1rem;
@@ -197,7 +197,7 @@ $oceanGreenDim: #61c9a88e;
       width: 100%;
       margin: 0%;
     }
-    button {
+    .button {
       width: 100%;
       margin: 0%;
       font-size: 1.1rem;
@@ -212,7 +212,7 @@ $oceanGreenDim: #61c9a88e;
     height: 77.75vh;
   }
   .rightBox {
-    button {
+    .button {
       font-size: 1.5rem;
     }
   }
@@ -223,7 +223,7 @@ $oceanGreenDim: #61c9a88e;
     height: 75.75vh;
   }
   .rightBox {
-    button {
+    .button {
       font-size: 1.5rem;
     }
   }
