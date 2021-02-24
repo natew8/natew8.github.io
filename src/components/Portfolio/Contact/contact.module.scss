@@ -245,6 +245,7 @@ form {
     padding: 0%;
   }
   .formContainer {
+    width: 100%;
     margin: 0%;
     h1 {
       width: 100%;
@@ -266,6 +267,7 @@ form {
     width: 100%;
   }
   .formGroup {
+    width: 100%;
     flex-direction: column;
     margin: 0% auto;
     input {
@@ -287,9 +289,6 @@ form {
 @media only screen and (max-width: 414px) {
   .formGroup {
     width: 100%;
-    input {
-      width: 0rem;
-    }
   }
 }
 
