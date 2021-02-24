@@ -44,7 +44,6 @@ $white: #f3f2f1;
   input {
     font-weight: 100;
     flex-grow: 1;
-    width: 15rem;
     height: 3rem;
     color: $black-color;
     margin: 0.3rem;
@@ -157,12 +156,10 @@ form {
       font-size: 0.7rem;
     }
   }
-  .form {
-    .formGroup {
-      margin: 0% auto;
-      input {
-        height: 2rem;
-      }
+  .formGroup {
+    margin: 0% auto;
+    input {
+      height: 2rem;
     }
   }
   .photo {
@@ -190,12 +187,11 @@ form {
       font-size: 0.65rem;
     }
   }
-  .form {
-    .formGroup {
-      margin: 0% auto;
-      input {
-        height: 2rem;
-      }
+
+  .formGroup {
+    margin: 0% auto;
+    input {
+      height: 2rem;
     }
   }
   .photo {
@@ -223,12 +219,11 @@ form {
       font-size: 0.65rem;
     }
   }
-  .form {
-    .formGroup {
-      margin: 0% auto;
-      input {
-        height: 2rem;
-      }
+
+  .formGroup {
+    margin: 0% auto;
+    input {
+      height: 2rem;
     }
   }
   .photo {
@@ -267,11 +262,11 @@ form {
   }
   .form {
     width: 100%;
-    .formGroup {
-      margin: 0% auto;
-      input {
-        height: 2rem;
-      }
+  }
+  .formGroup {
+    margin: 0% auto;
+    input {
+      height: 2rem;
     }
   }
   .photo {
@@ -283,6 +278,16 @@ form {
   .buttonBox {
     margin: 0% auto;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form {
+    .formGroup {
+      input {
+        width: 0rem;
+      }
+    }
   }
 }
 
@@ -313,13 +318,13 @@ form {
   .form {
     margin: 0rem;
     width: 100%;
-    .formGroup {
-      margin: 0rem;
-      padding: 0rem;
-      input {
-        width: 3rem;
-        height: 2rem;
-      }
+  }
+  .formGroup {
+    margin: 0rem;
+    padding: 0rem;
+    input {
+      width: 3rem;
+      height: 2rem;
     }
   }
   .photo {

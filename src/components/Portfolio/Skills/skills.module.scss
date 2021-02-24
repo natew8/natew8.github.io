@@ -64,13 +64,6 @@ $oceanGreenDim: #61c9a88e;
     font-size: 1.25rem;
   }
   .a {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    margin-top: 0.6rem;
-    width: fit-content;
-  }
-  .button {
     outline: none;
     background-color: transparent;
     border: 3px solid $nav-color;
@@ -78,10 +71,13 @@ $oceanGreenDim: #61c9a88e;
     width: 20rem;
     color: $nav-color;
     font-size: 1.6rem;
+    text-align: center;
+    padding: 0.25rem;
     height: 2.5rem;
     transition: all ease 0.3s;
   }
-  .button:hover {
+
+  .a:hover {
     cursor: pointer;
     background-color: $nav-color;
     color: $black-color;

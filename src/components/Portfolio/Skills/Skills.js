@@ -306,12 +306,13 @@ function Skills(props) {
         <h1>And more...</h1>
         <a
           className={skillStyles.a}
+          style={{ textDecoration: "none" }}
           target="_blank"
           rel="noreferrer"
           href="https://docs.google.com/document/d/1PYtd-zC6tS1CFLWXfxJGD-zNNNW7mYyXOVsuOF_yGZ8/edit?usp=sharing"
           type="button"
         >
-          <button className={skillStyles.button}>My Resume</button>
+          My Resume
         </a>
       </div>
     </div>
