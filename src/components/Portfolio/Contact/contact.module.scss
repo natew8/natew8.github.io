@@ -246,7 +246,6 @@ form {
   }
   .formContainer {
     margin: 0%;
-    width: 100%;
     h1 {
       width: 100%;
       font-size: 1.75rem;
@@ -260,10 +259,14 @@ form {
       font-size: 0.65rem;
     }
   }
+  textarea {
+    width: auto;
+  }
   .form {
     width: 100%;
   }
   .formGroup {
+    flex-direction: column;
     margin: 0% auto;
     input {
       height: 2rem;
@@ -281,12 +284,11 @@ form {
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .form {
-    .formGroup {
-      input {
-        width: 0rem;
-      }
+@media only screen and (max-width: 414px) {
+  .formGroup {
+    width: 100%;
+    input {
+      width: 0rem;
     }
   }
 }
