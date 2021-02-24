@@ -7,16 +7,18 @@ $black-color: #1b1924;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  max-width: 1400px;
   padding: 1rem;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   max-height: 91.3vh;
 }
 
 .content {
+  max-width: 1400px;
+  width: 100%;
   overflow-x: hidden;
-  overflow: auto;
+  overflow-y: auto;
   flex-grow: 1;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -28,25 +30,41 @@ $black-color: #1b1924;
   .container {
     max-width: 1300px;
   }
+
+  .content {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 1350px) {
   .container {
     max-width: 1200px;
+  }
+  .content {
+    overflow-x: hidden;
   }
 }
 @media (max-width: 1250px) {
   .container {
     max-width: 1100px;
   }
+  .content {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 1150px) {
   .container {
     max-width: 1000px;
   }
+  .content {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 1050px) {
   .container {
     max-width: 900px;
+  }
+  .content {
+    overflow-x: hidden;
   }
 }
 
@@ -54,35 +72,59 @@ $black-color: #1b1924;
   .container {
     max-width: 800px;
   }
+  .content {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 850px) {
   .container {
     max-width: 700px;
+  }
+  .content {
+    overflow-x: hidden;
   }
 }
 @media (max-width: 750px) {
   .container {
     max-width: 600px;
   }
+  .content {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 650px) {
   .container {
     max-width: 500px;
+  }
+  .content {
+    overflow-x: hidden;
+  }
+  .content {
+    overflow-x: hidden;
   }
 }
 @media (max-width: 550px) {
   .container {
     max-width: 550px;
   }
+  .content {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 450px) {
   .container {
     max-width: 450px;
   }
+  .content {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 390px) {
   .container {
     max-width: 390px;
+  }
+  .content {
+    overflow-x: hidden;
   }
 }
 // iPhone 12 pro and (-webkit-min-device-pixel-ratio: 3)
@@ -90,5 +132,8 @@ $black-color: #1b1924;
   .container {
     max-width: 390px;
     width: 390px;
+  }
+  .content {
+    overflow-x: hidden;
   }
 }
