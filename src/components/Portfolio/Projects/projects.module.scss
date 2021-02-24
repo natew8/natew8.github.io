@@ -3,7 +3,7 @@ $hover-color: #1c5c77;
 // $active-color: #c97064;
 $active-color: #d84936;
 $black-color: #1b1924;
-$black-colorLighter: #535355;
+$black-colorLighter: #8a8a8a;
 //Folio Colors
 $bright-orange: #ffd166;
 $banana: #f7e3af;
@@ -25,6 +25,8 @@ $oceanGreenDim: #61c9a88e;
 }
 
 .photo {
+  height: 100%;
+  width: 500px;
   filter: drop-shadow(1px 5px 2px $black-colorLighter);
 }
 .infoBox {
@@ -43,6 +45,10 @@ $oceanGreenDim: #61c9a88e;
   p {
     color: $black-color;
     font-size: 1.25rem;
+  }
+  .subSummary {
+    font-style: italic;
+    text-align: center;
   }
   .techUsed {
     color: $active-color;
@@ -79,10 +85,99 @@ $oceanGreenDim: #61c9a88e;
   }
   h6 {
     margin: 0%;
-    color: $black-color;
+    color: $black-colorLighter;
   }
 }
 .line {
   width: 0%;
   border: 1px solid $black-color;
 }
+
+@media only screen and (max-width: 1250px) {
+  .photo {
+    width: 475px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .photo {
+    width: 450px;
+  }
+  .infoBox {
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-between;
+    h1 {
+      font-size: 1.75em;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1em;
+      margin: 0%;
+    }
+    .techUsed {
+      font-size: 0.75em;
+      margin: 0%;
+    }
+    span {
+      padding: 0.5rem;
+      justify-content: space-evenly;
+      a {
+        margin: 0%;
+        button {
+          padding: 0%;
+          font-weight: 800;
+          font-size: 1em;
+          height: 1.75rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) {
+  .projectContainer {
+    padding: 0%;
+    flex-direction: column;
+  }
+  .photo {
+    height: 300px;
+    width: 400px;
+  }
+  .infoBox {
+    background-color: $black-color;
+    width: 100%;
+    margin: 0%;
+    padding: 0.5rem;
+    justify-content: space-between;
+    h1 {
+      border-left: none;
+      border-bottom: 2px solid $nav-color;
+      padding: 0%;
+      color: $nav-color;
+      font-size: 1.75em;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: $nav-color;
+      font-size: 0.75em;
+      font-weight: 550;
+      margin: 0%;
+    }
+    .techUsed {
+      font-size: 0.6em;
+      margin: 0%;
+    }
+    span {
+      padding: 0.5rem;
+      justify-content: space-evenly;
+      a {
+        margin: 0%;
+        button {
+          padding: 0%;
+          font-weight: 800;
+          font-size: 1em;
+          height: 1.75rem;
+        }
+      }
+    }
+  }
+} ;
