@@ -100,3 +100,11 @@ $oceanGreen: #61c9a8;
     transform: rotate(-90deg) translateX(-130px) translateY(10px);
   }
 }
+
+// iPhone 11 and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (max-width: 414px) {
+  .svg {
+    width: 95%;
+    transform: rotate(-90deg) translateX(-130px) translateY(5px);
+  }
+}

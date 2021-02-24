@@ -102,3 +102,12 @@ $white: #f3f2f1;
     width: 50px;
   }
 }
+// iPhone 11 and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (max-width: 414px) {
+  .menuA {
+    margin: 0.35rem;
+  }
+  .menuIcon {
+    width: 50px;
+  }
+}

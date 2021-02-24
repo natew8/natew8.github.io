@@ -364,3 +364,15 @@ $white: #f3f2f1;
     backdrop-filter: none;
   }
 }
+
+// iPhone 11 and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (max-width: 414px) {
+  .heroView {
+    align-items: flex-start;
+    height: 85vh;
+  }
+  .mainBox {
+    margin-top: 2.6rem;
+    backdrop-filter: none;
+  }
+}
