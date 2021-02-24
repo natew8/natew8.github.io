@@ -15,6 +15,9 @@ function Menu(props) {
         &times;
       </h1>
       <div>
+        <h1 onClick={() => scrollTo("#top")} className={menuStyles.link}>
+          home
+        </h1>
         <h1 onClick={() => scrollTo("#about")} className={menuStyles.link}>
           .about
         </h1>
@@ -26,9 +29,6 @@ function Menu(props) {
         </h1>
         <h1 onClick={() => scrollTo("#contact")} className={menuStyles.link}>
           .contact
-        </h1>
-        <h1 onClick={() => scrollTo("#top")} className={menuStyles.link}>
-          home
         </h1>
       </div>
       <MenuSocial />

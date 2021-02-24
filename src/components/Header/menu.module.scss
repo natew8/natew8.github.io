@@ -96,7 +96,10 @@ $white: #f3f2f1;
     font-size: 3rem;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
+  #container {
+    width: 75vw;
+  }
   .link {
     font-size: 2.75rem;
   }
