@@ -1,6 +1,6 @@
 import React from "react";
 import menuSocialStyles from "./menuSocial.module.scss";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 function MenuSocial(props) {
   return (
@@ -31,20 +31,13 @@ function MenuSocial(props) {
           alt="linkedIn"
         />
       </a>
-      <AniLink
-        className={menuSocialStyles.menuA}
-        cover
-        direction="right"
-        to="/contact"
-        bg="#1b1924"
-      >
-        <img
-          id={menuSocialStyles.email}
-          className={menuSocialStyles.menuIcon}
-          src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/gmail.svg"
-          alt="Email"
-        />
-      </AniLink>
+      <img
+        onClick={() => scrollTo("#contact")}
+        id={menuSocialStyles.email}
+        className={menuSocialStyles.menuIcon}
+        src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/gmail.svg"
+        alt="Email"
+      />
       <a
         className={menuSocialStyles.menuA}
         target="_blank"
