@@ -71,12 +71,26 @@ $oceanGreen: #61c9a8;
 }
 @media only screen and (max-width: 950px) {
   .svg {
-    transform: rotate(-90deg) translateX(-10px) translateY(27px);
+    width: 110%;
+    transform: rotate(-90deg) translateX(-10px) translateY(-53px);
   }
 }
 @media only screen and (max-width: 850px) {
   .svg {
-    transform: rotate(-90deg) translateX(-10px) translateY(21px);
+    width: 130%;
+    transform: rotate(-90deg) translateX(-10px) translateY(-105px);
+  }
+}
+@media only screen and (max-width: 750px) {
+  .svg {
+    width: 150%;
+    transform: rotate(-90deg) translateX(-10px) translateY(-150px);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .svg {
+    width: 170%;
+    transform: rotate(-90deg) translateX(-0px) translateY(-170px);
   }
 }
 

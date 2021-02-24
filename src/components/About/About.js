@@ -21,12 +21,11 @@ function About(props) {
     }
   `);
   const { childImageSharp } = data.file;
-
   return (
     <div id="about" className={aboutStyles.about}>
       <div className={aboutStyles.nameContent}>
         <div className={aboutStyles.photoBox}>
-          <Img className={aboutStyles.photo} fixed={childImageSharp.fixed} />
+          <Img className={aboutStyles.photo} fluid={childImageSharp.fluid} />
         </div>
 
         <div className={aboutStyles.line}></div>
