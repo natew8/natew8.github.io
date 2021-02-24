@@ -63,7 +63,7 @@ $oceanGreenDim: #61c9a88e;
     color: $nav-color;
     font-size: 1.25rem;
   }
-  a {
+  .a {
     background-color: transparent;
     outline: none;
     border: none;
@@ -160,12 +160,11 @@ $oceanGreenDim: #61c9a88e;
     h1 {
       display: none;
     }
-    a {
+    .a {
       width: 100%;
-      margin: 0%;
+      margin: 0% auto;
     }
     .button {
-      width: 100%;
       margin: 0%;
       font-size: 1.1rem;
       height: 2.25rem;

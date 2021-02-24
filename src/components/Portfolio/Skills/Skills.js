@@ -305,6 +305,7 @@ function Skills(props) {
       <div className={skillStyles.rightBox}>
         <h1>And more...</h1>
         <a
+          className={skillStyles.a}
           target="_blank"
           rel="noreferrer"
           href="https://docs.google.com/document/d/1PYtd-zC6tS1CFLWXfxJGD-zNNNW7mYyXOVsuOF_yGZ8/edit?usp=sharing"
