@@ -93,3 +93,12 @@ $white: #f3f2f1;
     width: 70px;
   }
 }
+// iPhone 12 pro and (-webkit-min-device-pixel-ratio: 3)
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .menuA {
+    margin: 0.35rem;
+  }
+  .menuIcon {
+    width: 50px;
+  }
+}

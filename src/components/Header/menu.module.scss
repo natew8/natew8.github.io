@@ -104,9 +104,10 @@ $white: #f3f2f1;
     font-size: 2.75rem;
   }
 }
-@media (max-width: 320px) {
-  #container {
-    transform: translateX(100vw);
-    width: 100vw;
+
+// iPhone 12 pro and (-webkit-min-device-pixel-ratio: 3)
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .link {
+    font-size: 2.5rem;
   }
 }

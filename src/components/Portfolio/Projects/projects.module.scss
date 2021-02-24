@@ -1,7 +1,7 @@
 $nav-color: #dcd9c6;
 $hover-color: #1c5c77;
 // $active-color: #c97064;
-$active-color: #d84936;
+$active-color: #e03b26;
 $black-color: #1b1924;
 $black-colorLighter: #8a8a8a;
 //Folio Colors
@@ -180,4 +180,50 @@ $oceanGreenDim: #61c9a88e;
       }
     }
   }
-} ;
+}
+// iPhone 12 pro and (-webkit-min-device-pixel-ratio: 3)
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .photo {
+    height: 200px;
+    width: 300px;
+  }
+  .infoBox {
+    background-color: $black-color;
+    width: 100%;
+    margin: 0%;
+    padding: 0.5rem;
+    justify-content: space-between;
+    h1 {
+      border-left: none;
+      border-bottom: 2px solid $nav-color;
+      padding: 0%;
+      color: $nav-color;
+      font-size: 1.75em;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: $nav-color;
+      font-size: 0.75em;
+      font-weight: 550;
+      margin: 0%;
+    }
+    .techUsed {
+      font-size: 0.7em;
+      margin: 0%;
+    }
+    span {
+      padding: 0.5rem;
+      justify-content: space-evenly;
+      a {
+        margin: 0%;
+        button {
+          padding: 0%;
+          font-weight: 800;
+          font-size: 1em;
+          height: 1.75rem;
+          width: 9rem;
+        }
+      }
+    }
+  }
+}

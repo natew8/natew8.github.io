@@ -207,3 +207,10 @@ $oceanGreenDim: #61c9a88e;
     }
   }
 }
+
+// iPhone 12 pro and (-webkit-min-device-pixel-ratio: 3)
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .skillsView {
+    height: 75.75vh;
+  }
+}

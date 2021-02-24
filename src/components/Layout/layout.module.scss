@@ -71,7 +71,7 @@ $black-color: #1b1924;
 }
 @media (max-width: 550px) {
   .container {
-    max-width: 500px;
+    max-width: 550px;
   }
 }
 @media (max-width: 450px) {
@@ -79,63 +79,15 @@ $black-color: #1b1924;
     max-width: 450px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 390px) {
   .container {
-    max-width: 530px;
+    max-width: 390px;
   }
 }
-// @media (max-width: 1740px) {
-//   .container {
-//     position: relative;
-//     overflow: hidden;
-//     margin: 0 auto;
-//     max-width: 1400px;
-//     padding: 1rem;
-//     display: flex;
-//     flex-direction: column;
-//     min-height: 100vh;
-//   }
-// }
-
-// @media (max-width: 1400px) {
-//   .container {
-//     position: relative;
-//     overflow: hidden;
-//     margin: 0 auto;
-//     max-width: 1200px;
-//     padding: 1rem;
-//     display: flex;
-//     flex-direction: column;
-//     min-height: 100vh;
-//   }
-// }
-
-// @media (max-width: 1210px) {
-//   .container {
-//     max-width: 1024px;
-//   }
-// }
-
-// @media (max-width: 1025px) {
-//   .container {
-//     max-width: 900px;
-//   }
-// }
-
-// @media (max-width: 900px) {
-//   .container {
-//     max-width: 770px;
-//   }
-// }
-
-// @media (max-width: 780px) {
-//   .container {
-//     max-width: 750px;
-//   }
-// }
-
-// @media (max-width: 700) {
-//   .container {
-//     max-width: 650;
-//   }
-// }
+// iPhone 12 pro and (-webkit-min-device-pixel-ratio: 3)
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  .container {
+    max-width: 390px;
+    width: 390px;
+  }
+}
