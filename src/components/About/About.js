@@ -35,14 +35,14 @@ function About(props) {
             <Titles />
           </h1>
           <p>
-            For as long as I can remember I've had a passion for Creating.
-            <br></br>From music to science, from theatre to web development, I
+            For as long as I can remember I've had a passion for creating.
+            <br></br>From music to science, from theater to web development, I
             live for the magic that comes from making something that has the
             opportunity to impact peoples lives.
-            <br></br> When I'm not making sweet stuff with code, I'm usually
+            <br></br>When I'm not making sweet stuff with code, I'm usually
             working on my next music adventure. I've been producing music since
             2016 and have worked on dozens of musical projects as a singer,
-            songwriter, guitar player, and music producer. Most recently i had
+            songwriter, guitar player, and music producer. Most recently I had
             the opportunity to executive produce{" "}
             <a
               style={{ textDecoration: "none" }}
@@ -51,8 +51,8 @@ function About(props) {
               href="https://open.spotify.com/album/3xbGvmH3gARaeh7LGjsq85?si=rFXkk-ZDT1u7c4q6KHJRng"
             >
               Jay Warren's album 'Give Love'
-            </a>
-            which went number 1 on the iTunes RnB charts.
+            </a>{" "}
+            which went to #1 on the iTunes RnB charts.
             <br></br>
             When my computer is finally put to sleep and I come back to reality,
             I get to spend time with my incredible wife, Kaylie and our two
