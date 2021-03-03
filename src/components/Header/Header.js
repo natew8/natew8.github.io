@@ -12,15 +12,15 @@ function Header(props) {
     <header id="header" className={headerStyle.header}>
       <nav className={headerStyle.nav}>
         <div id={headerStyle.listLeft}>
-          <li onClick={() => scrollTo("#projects")}>
-            <h1 className={headerStyle.link}>
-              .projects
-              <div className={headerStyle.underLine}></div>
-            </h1>
-          </li>
           <li onClick={() => scrollTo("#skills")}>
             <h1 className={headerStyle.link}>
               .skills
+              <div className={headerStyle.underLine}></div>
+            </h1>
+          </li>
+          <li onClick={() => scrollTo("#projects")}>
+            <h1 className={headerStyle.link}>
+              .projects
               <div className={headerStyle.underLine}></div>
             </h1>
           </li>
