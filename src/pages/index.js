@@ -14,13 +14,6 @@ export default function Home() {
       <Layout>
         <Hero />
         <div className={homeStyles.titlesBox}>
-          <h1 id="about" className={homeStyles.sectionTitle}>
-            Introductions
-          </h1>
-          <div></div>
-        </div>
-        <About />
-        <div className={homeStyles.titlesBox}>
           <h1 id="skills" className={homeStyles.sectionTitle}>
             Things I Know
           </h1>
@@ -34,6 +27,13 @@ export default function Home() {
           <div></div>
         </div>
         <Projects />
+        <div className={homeStyles.titlesBox}>
+          <h1 id="about" className={homeStyles.sectionTitle}>
+            Introductions
+          </h1>
+          <div></div>
+        </div>
+        <About />
         <div className={homeStyles.titlesBox}>
           <h1 id="contact" className={homeStyles.sectionTitle}>
             Lets Connect!

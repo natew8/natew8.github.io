@@ -12,9 +12,9 @@ function Header(props) {
     <header id="header" className={headerStyle.header}>
       <nav className={headerStyle.nav}>
         <div id={headerStyle.listLeft}>
-          <li onClick={() => scrollTo("#about")}>
+          <li onClick={() => scrollTo("#projects")}>
             <h1 className={headerStyle.link}>
-              .about
+              .projects
               <div className={headerStyle.underLine}></div>
             </h1>
           </li>
@@ -29,9 +29,9 @@ function Header(props) {
           NW
         </h1>
         <div id={headerStyle.listRight}>
-          <li onClick={() => scrollTo("#projects")}>
+          <li onClick={() => scrollTo("#about")}>
             <h1 className={headerStyle.link}>
-              .projects
+              .about
               <div className={headerStyle.underLine}></div>
             </h1>
           </li>
