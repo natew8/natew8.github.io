@@ -46,12 +46,11 @@ function Projects(props) {
       title: "Savvy Travels",
       summary:
         "My first team application. Savvy Travels is a flight finding web application built for the last minute adventurer. A user is able to give the application a trip budget and Savvy Travels will return all of the flights in that price range. Utilizing the users ip address Savvy Travels can also make suggestions based on the users closest airport. ",
-      subSummary:
-        "Savvy Travels is currently switching hosts. Link not available at this time. ",
+      subSummary: "",
       tech:
         "React | Redux | React Context |  SCSS | Amazon S3 | Mapbox API | Skyscanner API | Moment.js  | Axios | NodeJs | Nodemailer | Express | PostgreSQL",
       github: "https://github.com/savvy-travels/ssavvy-travels-app",
-      site: "",
+      site: "http://143.110.222.133:4050/#/",
     },
   ];
 
