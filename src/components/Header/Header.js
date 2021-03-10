@@ -1,7 +1,5 @@
-import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import headerStyle from "./header.module.scss";
 import Menu from "./Menu";
 

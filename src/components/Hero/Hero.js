@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-import Titles from "../Titles/Titles";
 import heroStyles from "./hero.module.scss";
 import Flower from "../Flower/Flower";
 

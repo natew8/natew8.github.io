@@ -63,7 +63,7 @@ const MyForm = () => {
       <div className={contactStyle.formContainer}>
         <h1>Contact Me</h1>
         <h2>
-          Im interested in any opportunities, big or small, in the music or web
+          I'm interested in any opportunities, big or small, in the music or web
           development field.
           <br></br>
           The more creative and ambitious the better.
